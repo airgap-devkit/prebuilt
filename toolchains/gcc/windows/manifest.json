@@ -1,0 +1,58 @@
+{
+  "_comment": "WinLibs GCC Windows toolchain manifest. SHA256 hashes self-computed from vendored archives.",
+
+  "version": "15.2.0",
+  "variant": "x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6",
+
+  "archives": {
+    "windows-x86_64": {
+      "zip": {
+        "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip",
+        "split_parts": [
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-aa",
+            "sha256": "299cb64a48e1ade491f58070f2bd6b82042a4fe9551f8f62b718df30a713482d"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-ab",
+            "sha256": "51131a9515b3a307a7a6b7dd4b325f3441b3b4c14ceb21aa2775b3e5bdf737e3"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-ac",
+            "sha256": "b3439cd8c7582623280abeab88c349e035273306d4f76afd9bb21d92c17db8d9"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-ad",
+            "sha256": "ddb152767617fd2713636c22e62876e33de50a6a5cc89bcd80bcf2ed8c22034a"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-ae",
+            "sha256": "0a6fe6ad3b8f48e8443544df70ce3cfd7d53049d41b5abdfff40ef2688d4d04c"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip.part-af",
+            "sha256": "9ba13529c0afd1ad36b8acbb8216bd73518fb411c82b4bde91efeb407a3f3d84"
+          }
+        ]
+      },
+      "7z": {
+        "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.7z",
+        "sha256": "3e801dbf6446e407150770d873c0beef44196127cdc1818e469d589bbdf751e2",
+        "split_parts": [
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.7z.part-aa",
+            "sha256": "4f7081f8bb004f9c6f6153991c9d6456abb79cba64616428ce84cb40b0d7549b"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.7z.part-ab",
+            "sha256": "9863c29ee4da6233525eb10a7e9a0c2e8c481ee8e40ce2a48f78d68edcef9725"
+          },
+          {
+            "filename": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.7z.part-ac",
+            "sha256": "0264b51e91824e2e26c12bbe59071c2be27ff1d3cc64f317486cdd14477ad20a"
+          }
+        ]
+      }
+    }
+  }
+}

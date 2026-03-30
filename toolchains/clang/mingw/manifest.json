@@ -1,0 +1,61 @@
+{
+  "_comment": "llvm-mingw Windows toolchain manifest. SHA256 hashes self-computed from vendored archives.",
+
+  "version": "20260324",
+  "variant": "ucrt-x86_64",
+
+  "archives": {
+    "windows-x86_64": {
+      "zip": {
+        "filename": "llvm-mingw-20260324-ucrt-x86_64.zip",
+        "split_parts": [
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.zip.part-aa",
+            "sha256": "9b9b360a5cec496ea9765aa61f268be20200ccf77ffbab1998879cd6f64d3c5a"
+          },
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.zip.part-ab",
+            "sha256": "8b8d718ecf78123a47092561b116ef5b9239dbc7d87ccf9597e3fec1f4b46bc7"
+          },
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.zip.part-ac",
+            "sha256": "2472ab27d8935807aa83c23ab1da8bd712401b4a64d161760be39fd855b1df7e"
+          },
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.zip.part-ad",
+            "sha256": "edd1b68decb0a37c69ac00ff2fbf3e040de2adaa50b1ad3e3428d18629e41085"
+          }
+        ]
+      },
+      "7z": {
+        "filename": "llvm-mingw-20260324-ucrt-x86_64.7z",
+        "sha256": "bb32b2dbde928aa0f606f4e82dc57ecd646254cea8121467e4d8b9460aea5d50",
+        "split_parts": [
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.7z.part-aa",
+            "sha256": "3633c8ea1833022a176c063844e9ee39680d9b09998cdeb1329a8ad5d121c036"
+          },
+          {
+            "filename": "llvm-mingw-20260324-ucrt-x86_64.7z.part-ab",
+            "sha256": "c3957116fc2806171b2182f5a477c33f434657d0aded537b197d64f1025a5ca9"
+          }
+        ]
+      }
+    },
+    "linux-x86_64": {
+      "tar.xz": {
+        "filename": "llvm-mingw-20260324-ucrt-ubuntu-22.04-x86_64.tar.xz",
+        "split_parts": [
+          {
+            "filename": "llvm-mingw-20260324-ucrt-ubuntu-22.04-x86_64.tar.xz.part-aa",
+            "sha256": "f62fb01834060daad730f25844064d53abfc99fd0db8c244d72c292cfd99921d"
+          },
+          {
+            "filename": "llvm-mingw-20260324-ucrt-ubuntu-22.04-x86_64.tar.xz.part-ab",
+            "sha256": "d6996772dcf79068515fcbcd58e640ee542357c477dd8121323d89037fb80483"
+          }
+        ]
+      }
+    }
+  }
+}
