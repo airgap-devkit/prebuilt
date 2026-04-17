@@ -1,24 +1,39 @@
-# airgap-cpp-devkit-prebuilt
+# airgap-devkit-prebuilt
 
 **Author: Nima Shafie**
 
-Pre-built binaries for the `airgap-cpp-devkit` suite.
+Prebuilt binary archives for the [`airgap-devkit`](https://github.com/NimaShafie/airgap-devkit) ecosystem.
 All binaries are precompiled, integrity-verified, and ready for air-gapped
 installation -- no compiler, no internet access, no package manager required.
 
-Main repo: https://github.com/NimaShafie/airgap-cpp-devkit
+Main repo: https://github.com/NimaShafie/airgap-devkit
 
 ---
 
 ## Purpose
 
-This submodule contains prebuilt archives that allow developers on air-gapped
-systems to skip source compilation entirely. Each module in the main repo has
-a corresponding entry here.
+This repository is an **optional submodule** of `airgap-devkit`. Tools that
+declare `"uses_prebuilt": true` in their `devkit.json` will look for their
+binary archives here under the same relative path (e.g.
+`prebuilt-binaries/toolchains/clang/mingw/`).
 
-In binary-restricted environments (where prebuilt binaries are not permitted
-by policy), this submodule can be skipped entirely -- every tool in the main
-repo can also be built from vendored source.
+Tools without `uses_prebuilt: true` are built from vendored source and do not
+require this submodule at all. In binary-restricted environments the entire
+submodule can be skipped -- every tool has a source-build path.
+
+### Adding this submodule to your clone
+
+```bash
+git submodule add https://github.com/NimaShafie/airgap-devkit-prebuilt prebuilt-binaries/
+```
+
+Or if cloning the main repo from scratch:
+
+```bash
+git clone https://github.com/NimaShafie/airgap-devkit
+cd airgap-devkit
+git submodule update --init prebuilt-binaries
+```
 
 ---
 
@@ -173,27 +188,13 @@ extraction. Nothing is extracted if verification fails.
 
 ---
 
-## Usage
-
-This submodule is initialized as part of the main repo setup:
-
-```bash
-git clone https://github.com/NimaShafie/airgap-cpp-devkit
-cd airgap-cpp-devkit
-git submodule update --init prebuilt-binaries
-```
-
-Each tool's install script references this submodule automatically.
-
----
-
 ## Skipping This Submodule
 
 In binary-restricted environments, do not initialize this submodule:
 
 ```bash
-git clone https://github.com/NimaShafie/airgap-cpp-devkit
-cd airgap-cpp-devkit
+git clone https://github.com/NimaShafie/airgap-devkit
+cd airgap-devkit
 # Do NOT run: git submodule update --init prebuilt-binaries
 # Build all tools from vendored source instead
 ```

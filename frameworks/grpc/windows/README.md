@@ -1,7 +1,7 @@
 # gRPC Prebuilt Binaries — Windows x64
 
 Prebuilt gRPC binaries for Windows x64, compiled with MSVC in Release mode.
-Part of the `airgap-cpp-devkit` prebuilt-binaries submodule.
+Part of the `airgap-devkit` prebuilt-binaries submodule.
 
 ---
 
@@ -31,7 +31,7 @@ Each version package contains the full `cmake --target install` output:
 Run from **any PowerShell** (no Visual Studio required):
 
 ```powershell
-cd C:\path\to\airgap-cpp-devkit\frameworks\grpc
+cd C:\path\to\airgap-devkit\frameworks\grpc
 .\install-prebuilt.ps1 -version 1.78.1 -dest C:\MyInstall\grpc-1.78.1
 ```
 
@@ -50,7 +50,7 @@ The script will:
 | Flag | Default | Description |
 |------|---------|-------------|
 | `-version` | `1.78.1` | gRPC version to install |
-| `-dest` | Auto-detected | Install path (admin → `C:\Program Files\airgap-cpp-devkit\grpc-<ver>`, user → `%LOCALAPPDATA%\...`) |
+| `-dest` | Auto-detected | Install path (admin → `C:\Program Files\airgap-devkit\grpc-<ver>`, user → `%LOCALAPPDATA%\...`) |
 | `-format` | `7z` if 7-Zip found, else `zip` | Archive format to extract |
 
 ---
@@ -60,7 +60,7 @@ The script will:
 If you prefer to build gRPC yourself from the vendored source tarball:
 
 ```powershell
-cd C:\path\to\airgap-cpp-devkit\frameworks\grpc
+cd C:\path\to\airgap-devkit\frameworks\grpc
 .\setup.ps1 -version 1.78.1 -dest C:\MyInstall\grpc-1.78.1
 ```
 
