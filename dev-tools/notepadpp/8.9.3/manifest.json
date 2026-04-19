@@ -1,0 +1,16 @@
+{
+  "tool": "notepadpp", "version": "8.9.3",
+  "source": "https://notepad-plus-plus.org/downloads/v8.9.3/",
+  "platforms": {
+    "windows": {
+      "installer": "npp.8.9.3.Installer.x64.exe",
+      "installer_sha256": "8db87a458551371e911bea5243840c783b5e7d41b7f867a2a6f74971881fb1e4",
+      "install": "run installer silently: npp.8.9.3.Installer.x64.exe /S /D=<prefix>",
+      "portable": "npp.8.9.3.portable.x64.zip",
+      "portable_sha256": "020c4d697bd0bb24eb332cf9098e62d0c3328b6d6ae65862c4a745e9a7d010a3",
+      "install_portable": "unzip npp.8.9.3.portable.x64.zip -d <prefix>"
+    }
+  },
+  "compression": "zip",
+  "notes": "setup.sh uses the portable zip by default (no admin required). Run the installer manually for a full system-wide install."
+}

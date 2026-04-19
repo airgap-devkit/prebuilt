@@ -1,0 +1,17 @@
+{
+  "tool": "putty", "version": "0.83",
+  "source": "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html",
+  "platforms": {
+    "windows": {
+      "archive": "putty-64bit-0.83-installer.msi",
+      "sha256": "aa8e5036d973688f1e8622fbe9ab22e037346e0def0197bf5e7cdf37da4e223d",
+      "install": "msiexec /i putty-64bit-0.83-installer.msi /quiet INSTALLDIR=<prefix>\\"
+    },
+    "linux-x64": {
+      "source_archive": "tools/dev-tools/putty/sources/putty-0.83.tar.gz",
+      "sha256": "718777c13d63d0dff91fe03162bc2a05b4dfc8b0827634cd60b51cefdff631c6",
+      "build": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DPUTTY_GTK_VERSION=NONE && cmake --build build && cmake --install build",
+      "notes": "Builds CLI tools only (plink, pscp, psftp, puttygen). GTK not required."
+    }
+  }
+}

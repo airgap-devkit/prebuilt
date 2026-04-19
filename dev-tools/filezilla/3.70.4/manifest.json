@@ -1,0 +1,17 @@
+{
+  "tool": "filezilla", "version": "3.70.4",
+  "source": "https://filezilla-project.org/download.php",
+  "platforms": {
+    "windows": {
+      "archive": "FileZilla_3.70.4_win64_sponsored2-setup.exe",
+      "sha256": "3d3b6d6d55858f72b12cc4a55d8fec6950e56bdd0507b6bab2fc2b160dc055bd",
+      "install": "run installer silently: FileZilla_3.70.4_win64_sponsored2-setup.exe /S /D=<prefix>"
+    },
+    "linux-x64": {
+      "archive": "FileZilla_3.70.4_x86_64-linux-gnu.tar.xz",
+      "sha256": "f024a7577ebcf5f8967f0ca2ee38c10e93320f4eaf886ba7a8f4b532fc000d24",
+      "install": "tar -xJf FileZilla_3.70.4_x86_64-linux-gnu.tar.xz"
+    }
+  },
+  "compression": "tar.xz"
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "sourcetree", "version": "3.4.30",
+  "source": "https://www.sourcetreeapp.com/",
+  "platforms": {
+    "windows": {
+      "archive": "SourceTreeSetup-3.4.30.exe",
+      "sha256": "07271493c0de23157563b10151db1f9fd7cc8bfcf2507ea3894087e5f9c3529f",
+      "install": "SourceTreeSetup-3.4.30.exe --silent",
+      "notes": "Squirrel-based installer. Installs to %LocalAppData%\\SourceTree by default; custom prefix not supported by the installer."
+    }
+  }
+}
