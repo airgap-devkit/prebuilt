@@ -1,9 +1,30 @@
 {
-  "tool": "dotnet", "version": "10.0.202",
+  "tool": "dotnet",
+  "version": "10.0.202",
   "source": "https://dotnet.microsoft.com/en-us/download/dotnet/10.0",
   "platforms": {
-    "windows": { "archive": "dotnet-sdk-10.0.202-win-x64.tar.xz", "parts": 4, "reassemble": "cat dotnet-sdk-10.0.202-win-x64.tar.xz.part-* | tar -xJ" },
-    "linux-x64": { "archive": "dotnet-sdk-10.0.202-linux-x64.tar.xz", "parts": 3, "reassemble": "cat dotnet-sdk-10.0.202-linux-x64.tar.xz.part-* | tar -xJ" }
+    "windows": {
+      "archive": "dotnet-sdk-10.0.202-win-x64.tar.xz",
+      "parts": 4,
+      "part_sha256": {
+        "dotnet-sdk-10.0.202-win-x64.tar.xz.part-aa": "5ec25b8bb165087125f78b438269c4ad3cd316adec76b8c6c2ac3c34e5c21f09",
+        "dotnet-sdk-10.0.202-win-x64.tar.xz.part-ab": "4dbbbab1a4ba09ee175a3c2de1c1a40b8cc2019932e7b581ab3025f6699368f2",
+        "dotnet-sdk-10.0.202-win-x64.tar.xz.part-ac": "36a664ce6ca0107eeba13949396987e7392de767befa8248926f18584d626042",
+        "dotnet-sdk-10.0.202-win-x64.tar.xz.part-ad": "4f7903f52427f4856352f95df1fc9bb5b54e470eb9fa65447723318a8d7a279e"
+      },
+      "reassemble": "cat dotnet-sdk-10.0.202-win-x64.tar.xz.part-* | tar -xJ"
+    },
+    "linux-x64": {
+      "archive": "dotnet-sdk-10.0.202-linux-x64.tar.xz",
+      "parts": 3,
+      "part_sha256": {
+        "dotnet-sdk-10.0.202-linux-x64.tar.xz.part-aa": "2fde9472f4d1602cca50ef54ed02468a27bad700a019cfc0ea2dc928817e3322",
+        "dotnet-sdk-10.0.202-linux-x64.tar.xz.part-ab": "201bf07c307b8aaae386615f4aa1c6b67d4b1f7d105e7708f516d14d976549ac",
+        "dotnet-sdk-10.0.202-linux-x64.tar.xz.part-ac": "c79f21da9e1d15f0bf9c4846e69537559e0565873f1aca3ba8e2694f597dc4ec"
+      },
+      "reassemble": "cat dotnet-sdk-10.0.202-linux-x64.tar.xz.part-* | tar -xJ"
+    }
   },
-  "compression": "tar.xz", "part_size_mb": 50
+  "compression": "tar.xz",
+  "part_size_mb": 50
 }

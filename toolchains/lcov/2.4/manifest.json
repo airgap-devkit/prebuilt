@@ -6,7 +6,9 @@
   "platforms": {
     "linux-x64": {
       "rpm": "lcov-2.4-0.noarch.rpm",
+      "rpm_sha256": "bcfef562a5e9c5c617ee21790e647cd7c1a6adeaa613b0ebb6a610a5f59b6e25",
       "source_archive": "lcov-2.4.tar.xz",
+      "source_sha256": "e322e62beb4c6079bd1f85e3aacd51a95205e75c0cd1ea3983406a9528bce434",
       "install_rpm": "rpm -ivh lcov-2.4-0.noarch.rpm",
       "install_source": "tar -xJf lcov-2.4.tar.xz && cd lcov-2.4 && make install PREFIX=/usr/local"
     }

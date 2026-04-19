@@ -1,10 +1,23 @@
 {
-  "tool": "sqlite", "version": "3.53.0",
+  "tool": "sqlite",
+  "version": "3.53.0",
   "source": "https://sqlite.org/download.html",
   "platforms": {
-    "windows": { "archive": "sqlite-tools-3.53.0-windows-x64.tar.xz", "reassemble": "tar -xJf sqlite-tools-3.53.0-windows-x64.tar.xz" },
-    "linux-x64": { "archive": "sqlite-tools-3.53.0-linux-x64.tar.xz", "reassemble": "tar -xJf sqlite-tools-3.53.0-linux-x64.tar.xz" },
-    "linux-rhel8": { "archive": "sqlite-3.26.0-20.el8_10.x86_64.rpm", "install": "rpm -ivh sqlite-3.26.0-20.el8_10.x86_64.rpm" }
+    "windows": {
+      "archive": "sqlite-tools-3.53.0-windows-x64.tar.xz",
+      "sha256": "2d133bf7b781d72b2d6101bcbdd3bd95a1a5953ac7a3c9f0fb14c88a23615fc2",
+      "reassemble": "tar -xJf sqlite-tools-3.53.0-windows-x64.tar.xz"
+    },
+    "linux-x64": {
+      "archive": "sqlite-tools-3.53.0-linux-x64.tar.xz",
+      "sha256": "c7e8e844c9e15cd56e18f87bda8db1d1525e00995a7a0636ae8e0779966e483d",
+      "reassemble": "tar -xJf sqlite-tools-3.53.0-linux-x64.tar.xz"
+    },
+    "linux-rhel8": {
+      "archive": "sqlite-3.26.0-20.el8_10.x86_64.rpm",
+      "sha256": "0ad7d10fe613415fb056a16f0699e39cb4182271300a0c353137b744671b3c78",
+      "install": "rpm -ivh sqlite-3.26.0-20.el8_10.x86_64.rpm"
+    }
   },
   "compression": "tar.xz"
 }

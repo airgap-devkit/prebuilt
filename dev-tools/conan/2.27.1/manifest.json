@@ -1,9 +1,18 @@
 {
-  "tool": "conan", "version": "2.27.1",
+  "tool": "conan",
+  "version": "2.27.1",
   "source": "https://github.com/conan-io/conan/releases/tag/2.27.1",
   "platforms": {
-    "windows": { "archive": "conan-2.27.1-windows-x86_64.tar.xz", "reassemble": "tar -xJf conan-2.27.1-windows-x86_64.tar.xz" },
-    "linux-x64": { "archive": "conan-2.27.1-amd64.deb", "install": "dpkg -i conan-2.27.1-amd64.deb" }
+    "windows": {
+      "archive": "conan-2.27.1-windows-x86_64.tar.xz",
+      "sha256": "641ed24b685b871fc1d562f24b01cbb8442f43732eeebe181bca56d135d2b118",
+      "reassemble": "tar -xJf conan-2.27.1-windows-x86_64.tar.xz"
+    },
+    "linux-x64": {
+      "archive": "conan-2.27.1-amd64.deb",
+      "sha256": "7877525aedf58d5f0ec418d4890bcfaafbac57103da356e3b956fb7f44f7e5e6",
+      "install": "dpkg -i conan-2.27.1-amd64.deb"
+    }
   },
   "compression": "tar.xz"
 }

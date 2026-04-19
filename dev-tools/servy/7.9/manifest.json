@@ -1,8 +1,17 @@
 {
-  "tool": "servy", "version": "7.9",
+  "tool": "servy",
+  "version": "7.9",
   "platform": "windows",
   "platforms": {
-    "windows": { "archive": "servy-7.9-windows-x64.tar.xz", "reassemble": "tar -xJf servy-7.9-windows-x64.tar.xz" }
+    "windows": {
+      "archive": "servy-7.9-windows-x64.tar.xz",
+      "parts": 2,
+      "part_sha256": {
+        "servy-7.9-windows-x64.tar.xz.part-aa": "877f4d4cf97dfef01d7d8411ecba8be99a821028545a020e752ea273f27e89bd",
+        "servy-7.9-windows-x64.tar.xz.part-ab": "6fcceddc07f7f9dd97c472771158359fcfb1d8050899f61eec24770326e2a8d8"
+      },
+      "reassemble": "tar -xJf servy-7.9-windows-x64.tar.xz"
+    }
   },
   "compression": "tar.xz"
 }

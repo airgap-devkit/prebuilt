@@ -10,6 +10,12 @@
     "windows": {
       "archive": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz",
       "parts": 4,
+      "part_sha256": {
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-aa": "8b5f25be465cb668de860eb84957e6264be836809b2c3e7af525f2171584ac2d",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ab": "ff260590e4802e5ebd62159af295377d91f3ce79ad23f6e039d8ec4b902acb98",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ac": "14db63ef8c86782c2e408b23a72cb499457b1c6c3eeb36e7646498da318dc9cf",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ad": "4386b14b3f70cd897e00f621a80146dd811774f80f671d707a61cb23831eda18"
+      },
       "reassemble": "cat winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-* | tar -xJ"
     }
   },

@@ -1,10 +1,28 @@
 {
-  "tool": "python", "version": "3.14.4",
+  "tool": "python",
+  "version": "3.14.4",
   "source": "https://www.python.org/downloads/release/python-3144/",
   "platforms": {
-    "windows-embed": { "archive": "python-3.14.4-embed-amd64.zip", "notes": "Embeddable/portable, no installer needed" },
-    "windows-full": { "archive": "python-3.14.4-amd64.zip", "notes": "Full Windows package" },
-    "linux-x64": { "archive": "cpython-3.14.4-linux-x64.tar.xz", "parts": 2, "reassemble": "cat cpython-3.14.4-linux-x64.tar.xz.part-* | tar -xJ" }
+    "windows-embed": {
+      "archive": "python-3.14.4-embed-amd64.zip",
+      "sha256": "cda80a9b1e75c0f1b4f9872ca1b417f0d19bce32facc811aea9180e70fad5fb9",
+      "notes": "Embeddable/portable, no installer needed"
+    },
+    "windows-full": {
+      "archive": "python-3.14.4-amd64.zip",
+      "sha256": "11a6f5f5e7defeaa67a0b8e797f0eabec6e4499e663815319a0e0d360091f906",
+      "notes": "Full Windows package"
+    },
+    "linux-x64": {
+      "archive": "cpython-3.14.4-linux-x64.tar.xz",
+      "parts": 2,
+      "part_sha256": {
+        "cpython-3.14.4-linux-x64.tar.xz.part-aa": "33a2750f206f35f35ca79996c3d04aa8e7e2c8102f311ad0512f23ff2a1760ed",
+        "cpython-3.14.4-linux-x64.tar.xz.part-ab": "89275bb45b05f6b56bce35482afb428e31741d6866d825f12df070dbf1eb700e"
+      },
+      "reassemble": "cat cpython-3.14.4-linux-x64.tar.xz.part-* | tar -xJ"
+    }
   },
-  "compression": "tar.xz", "part_size_mb": 50
+  "compression": "tar.xz",
+  "part_size_mb": 50
 }

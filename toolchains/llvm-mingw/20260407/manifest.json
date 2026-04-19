@@ -7,11 +7,19 @@
     "windows": {
       "archive": "llvm-mingw-20260407-ucrt-x86_64.tar.xz",
       "parts": 2,
+      "part_sha256": {
+        "llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-aa": "9668022f21925e9d9ef1a96aa34df850f365ce74db370df524c7b80bb640fff3",
+        "llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-ab": "f1f8064ab869e02b95baba1795801edee2a26dd4e0653dabec5157cd25fd5bee"
+      },
       "reassemble": "cat llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-* | tar -xJ"
     },
     "linux-x64": {
       "archive": "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz",
       "parts": 2,
+      "part_sha256": {
+        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-aa": "7b503dfa1d208652923cb5ac3d6ebf00e79b6ca61abc7d722a303926de68fd8e",
+        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-ab": "9b616be53d5dedd56b6738683877d74f28e05079ba645a0eaa878d2f92cc9c7f"
+      },
       "reassemble": "cat llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-* | tar -xJ"
     }
   },

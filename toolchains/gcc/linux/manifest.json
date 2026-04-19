@@ -6,6 +6,10 @@
     "linux-rhel8": {
       "archive": "gcc-toolset-15-rhel8-rpms.tar.xz",
       "parts": 2,
+      "part_sha256": {
+        "gcc-toolset-15-rhel8-rpms.tar.xz.part-aa": "18dd400b53a6f7d4d56b59e7a6ad87387e6aaa8faf0aab3f8ed56a0f0e3fb42a",
+        "gcc-toolset-15-rhel8-rpms.tar.xz.part-ab": "7c6ae3b8c09c2f90e22ac6df9d4f0b8d3f603d34a25b819f42b5f977bd6a6273"
+      },
       "reassemble": "cat gcc-toolset-15-rhel8-rpms.tar.xz.part-* | tar -xJ",
       "install": "rpm -ivh *.rpm"
     }

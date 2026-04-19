@@ -6,11 +6,13 @@
   "platforms": {
     "windows": {
       "archive": "ninja-1.13.2-windows.tar.xz",
+      "sha256": "3dbd4ad9933d6d39c5e507d0add236d952ab39e513d376fdd9b157bf81cebdb2",
       "binary": "ninja.exe",
       "reassemble": "tar -xJf ninja-1.13.2-windows.tar.xz"
     },
     "linux-x64": {
       "archive": "ninja-1.13.2-linux.tar.xz",
+      "sha256": "1c645d6d45d95c3e02e9b9e4b7247b53e4d2d22281bc15af2be3eb90343f13b7",
       "binary": "ninja",
       "reassemble": "tar -xJf ninja-1.13.2-linux.tar.xz"
     }
