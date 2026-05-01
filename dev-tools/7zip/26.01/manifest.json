@@ -1,0 +1,18 @@
+{
+  "tool": "7zip",
+  "version": "26.01",
+  "source": "https://www.7-zip.org/download.html",
+  "platforms": {
+    "windows": {
+      "installer": "7z2601-x64.exe",
+      "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+      "install": "NSIS silent install"
+    },
+    "linux-x64": {
+      "archive": "7z2601-linux-x64.tar.xz",
+      "sha256": "8ea0fc8a135e7b848e80a4116fe22dff56c8c4518dde1f43cce67f4e340b437a",
+      "reassemble": "tar -xJf 7z2601-linux-x64.tar.xz"
+    }
+  },
+  "compression": "tar.xz"
+}

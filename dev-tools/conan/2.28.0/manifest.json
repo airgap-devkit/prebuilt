@@ -1,0 +1,17 @@
+{
+  "tool": "conan",
+  "version": "2.28.0",
+  "source": "https://github.com/conan-io/conan/releases/tag/2.28.0",
+  "platforms": {
+    "windows": {
+      "archive": "conan-2.28.0-windows-x86_64.tar.xz",
+      "sha256": "20f783778fdb6699428bba92b124d0e81664fb2897cc42733ed8d90ec0ad0eff",
+      "reassemble": "tar -xJf conan-2.28.0-windows-x86_64.tar.xz"
+    },
+    "linux-x64": {
+      "archive": "conan-2.28.0-linux-x86_64.tgz",
+      "sha256": "99b314db97aec7f8a1517ceebd675ffe995e54a6174f67e2516d34cc09e42307",
+      "reassemble": "tar -xzf conan-2.28.0-linux-x86_64.tgz -C <prefix>/bin --strip-components=1"
+    }
+  }
+}

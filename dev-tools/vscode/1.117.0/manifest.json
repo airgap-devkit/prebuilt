@@ -1,0 +1,33 @@
+{
+  "tool": "vscode",
+  "version": "1.117.0",
+  "source": "https://code.visualstudio.com/updates/v1_117",
+  "platforms": {
+    "windows": {
+      "archive": "VSCodeUserSetup-x64-1.117.0.exe",
+      "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157",
+      "part_sha256": {
+        "VSCodeUserSetup-x64-1.117.0.exe.part-aa": "d4272f8a3e1f2b827ee499c918deec88d9723af9c995695f1a21007951c9da45",
+        "VSCodeUserSetup-x64-1.117.0.exe.part-ab": "8de3500df64a8d78a62dbe57f81dcbcf44e902c2d3ef695282133b79e9e1c9f3",
+        "VSCodeUserSetup-x64-1.117.0.exe.part-ac": "347692af26bced557fae6e92b5afdc43671cbdf3726e8ed7268d069d6ac13327",
+        "VSCodeUserSetup-x64-1.117.0.exe.part-ad": "a48b01bb36df4d4187c5c3dc06e18877e837d2feb2a99c75745c343ebd74adaa"
+      },
+      "reassemble": "cat VSCodeUserSetup-x64-1.117.0.exe.part-* > VSCodeUserSetup-x64-1.117.0.exe",
+      "install": "InnoSetup silent: /VERYSILENT /NORESTART /MERGETASKS=!runcode"
+    },
+    "linux-x64": {
+      "archive": "code-1.117.0.el8.x86_64.rpm",
+      "sha256": "ec6d86c3240800f6af8aa7d95d45b6cfa51d7e83a3ea5e9b5810ec49fc02cd82",
+      "part_sha256": {
+        "code-1.117.0.el8.x86_64.rpm.part-aa": "a25a2059916572ef440e009b31d433c7034194536f76fffc2066a8ee881b5a0a",
+        "code-1.117.0.el8.x86_64.rpm.part-ab": "291f8712124cf81a6f6684de98268ddf3db1e9d744cdcc2f3c30076068a95b09",
+        "code-1.117.0.el8.x86_64.rpm.part-ac": "a6abbc46e0b68c4e87001b2298d9185c8da367547df972720b8ae84e4447e91b",
+        "code-1.117.0.el8.x86_64.rpm.part-ad": "54b687b0ceed890a181182a5a7447585d713d48afd49f88817fd06583bf6675a",
+        "code-1.117.0.el8.x86_64.rpm.part-ae": "982d3a0a983e945aa0062809f4b751090c3e18ef23ad9f45f2608956d048b90a"
+      },
+      "reassemble": "cat code-1.117.0.el8.x86_64.rpm.part-* > code-1.117.0.el8.x86_64.rpm",
+      "install": "rpm -ivh --force code-1.117.0.el8.x86_64.rpm"
+    }
+  },
+  "part_size_mb": 49
+}

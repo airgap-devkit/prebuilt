@@ -1,0 +1,13 @@
+{
+  "tool": "servy",
+  "version": "8.3",
+  "source": "https://github.com/aelassas/servy/releases/tag/v8.3",
+  "platforms": {
+    "windows": {
+      "installer": "servy-8.3-x64-installer.exe",
+      "sha256": "b2747253f21a0495ba598e9b4fe1c662081c21ea3ae263be6d109168371abbf5",
+      "install": "Inno Setup silent: /VERYSILENT /NORESTART /NOCANCEL /SP-"
+    }
+  },
+  "notes": ".NET 8 variant. setup.sh uses devkit_install_exe."
+}

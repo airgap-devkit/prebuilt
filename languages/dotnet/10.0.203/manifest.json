@@ -1,0 +1,19 @@
+{
+  "tool": "dotnet",
+  "version": "10.0.203",
+  "source": "https://dotnet.microsoft.com/en-us/download/dotnet/10.0",
+  "platforms": {
+    "windows": {
+      "archive": "dotnet-sdk-10.0.203-win-x64.tar.xz",
+      "part_sha256": {"dotnet-sdk-10.0.203-win-x64.tar.xz.part-aa": "7c5042bffb65a20bd30725bbb8ce3f97093c498ab6aa118ff87dc30d4011af38","dotnet-sdk-10.0.203-win-x64.tar.xz.part-ab": "af9fd70bab373808e20a5f3155e98af0f4339dd86aca82d540f661b80400d821","dotnet-sdk-10.0.203-win-x64.tar.xz.part-ac": "ce83419154edf164ee5ae3d2d006024be5de2284e16f3165ab173225b8452a18","dotnet-sdk-10.0.203-win-x64.tar.xz.part-ad": "2efd79551485fee612d30b55a33b8881a9b62b3484123458ee646753b43e6374"},
+      "reassemble": "cat dotnet-sdk-10.0.203-win-x64.tar.xz.part-* | tar -xJ"
+    },
+    "linux-x64": {
+      "archive": "dotnet-sdk-10.0.203-linux-x64.tar.xz",
+      "part_sha256": {"dotnet-sdk-10.0.203-linux-x64.tar.xz.part-aa": "93ad1d4069b0b9db8a9fa5d642df8894b2c2c495ef5eed31d45824ab9e6611cb","dotnet-sdk-10.0.203-linux-x64.tar.xz.part-ab": "c54c410a49b644a231c81ba4bdff1826a3c486b4ab1b560d43b7997e48729ba7","dotnet-sdk-10.0.203-linux-x64.tar.xz.part-ac": "105a7dd384f3a9ab328f110d22211befe3a8124e79b9c91273d7873d69dbb63a"},
+      "reassemble": "cat dotnet-sdk-10.0.203-linux-x64.tar.xz.part-* | tar -xJ"
+    }
+  },
+  "compression": "tar.xz",
+  "part_size_mb": 50
+}
