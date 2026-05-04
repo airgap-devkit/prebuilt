@@ -10,8 +10,9 @@
     },
     "linux-x64": {
       "archive": "sqlite-tools-3.53.0-linux-x64.tar.xz",
-      "sha256": "c7e8e844c9e15cd56e18f87bda8db1d1525e00995a7a0636ae8e0779966e483d",
-      "reassemble": "tar -xJf sqlite-tools-3.53.0-linux-x64.tar.xz"
+      "sha256": "197c0c2a96e3ca899b7501b5a2d01b0239a24362b573872a450efa12d22871c9",
+      "reassemble": "tar -xJf sqlite-tools-3.53.0-linux-x64.tar.xz",
+      "note": "static musl build (zig cc), no glibc dependency — runs on RHEL 8/9 and any glibc version"
     },
     "linux-rhel8": {
       "archive": "sqlite-3.26.0-20.el8_10.x86_64.rpm",
