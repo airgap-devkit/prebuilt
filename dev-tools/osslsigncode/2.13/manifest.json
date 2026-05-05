@@ -8,10 +8,11 @@
       "sha256": "c6d3ec8f383a6ed204503a9d4445788f2d3e71da87f3604c42e40167ad9ceb8e"
     },
     "linux-x64": {
+      "binary": "osslsigncode-linux-amd64",
+      "sha256": "1b496b689eec628063259ec4b898f2c56bd39f62ded693a7f1c02028337b9e68",
+      "notes": "Statically linked (OpenSSL 3.0.13 + zlib 1.3, no curl). Runs on glibc 2.17+ and musl. No runtime deps.",
       "source_archive": "tools/dev-tools/osslsigncode/sources/osslsigncode-2.13.tar.gz",
-      "sha256": "ee95638b8bec0c019ddf28cb14988645abbd180dcd017536338b7d0d5eaaea96",
-      "build": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build && cmake --install build",
-      "notes": "Requires: gcc cmake openssl-devel libcurl-devel zlib-devel pkg-config"
+      "source_sha256": "ee95638b8bec0c019ddf28cb14988645abbd180dcd017536338b7d0d5eaaea96"
     }
   }
 }
