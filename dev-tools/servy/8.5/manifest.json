@@ -1,0 +1,17 @@
+{
+  "tool": "servy",
+  "version": "8.5",
+  "source": "https://github.com/aelassas/servy/releases/tag/v8.5",
+  "platforms": {
+    "windows": {
+      "archive": "servy-8.5-x64-installer.exe",
+      "part_sha256": {
+        "servy-8.5-x64-installer.exe.part-aa": "726c63b602b684aa9b923eb47e8f6716e5f567c12a4c674203f011e7dbe6260d",
+        "servy-8.5-x64-installer.exe.part-ab": "98ce86865eaf93d2b5226bee94635bca3770ce106fd8c82ef30c5072e97bcb98"
+      },
+      "reassemble": "cat servy-8.5-x64-installer.exe.part-* | tar -xJ"
+    }
+  },
+  "compression": "tar.xz",
+  "part_size_mb": 50
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "sqlite",
+  "version": "3.53.3",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "archive": "sqlite-tools-win-x64-3530300.zip",
+      "sha256": "c90fe36442cf573e8a19b3e8733d121622b8e2d5a0c47cbda97aeba9517d1c45"
+    }
+  },
+  "compression": "tar.xz"
+}

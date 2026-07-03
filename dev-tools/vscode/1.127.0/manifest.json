@@ -1,0 +1,31 @@
+{
+  "tool": "vscode",
+  "version": "1.127.0",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "archive": "VSCodeUserSetup-x64-1.127.0.exe",
+      "part_sha256": {
+        "VSCodeUserSetup-x64-1.127.0.exe.part-aa": "bcaedd029a7a5ab190fe72c595974c5ce36d644632dd81fb7cf22b82c9e4315b",
+        "VSCodeUserSetup-x64-1.127.0.exe.part-ab": "18a6dbf5cc47a7a8d9ba0dee9b20d8a297923d2228974c507f9cf2477d729ef1",
+        "VSCodeUserSetup-x64-1.127.0.exe.part-ac": "c893904739e62e5f9933224ce28914754c2ad8ce4e15b8f0f25596a0019ad0fc",
+        "VSCodeUserSetup-x64-1.127.0.exe.part-ad": "a38de08a00761b59168f1c2db26e5b9124cf339450d52eb0aee6fc7eb862526a"
+      },
+      "reassemble": "cat VSCodeUserSetup-x64-1.127.0.exe.part-* | tar -xJ"
+    },
+    "linux-x64": {
+      "archive": "code-1.127.0.el8.x86_64.rpm",
+      "part_sha256": {
+        "code-1.127.0.el8.x86_64.rpm.part-aa": "c47455b89f387fac4482cce8ee60e3beb431f3a2951478a5accdd3941be25756",
+        "code-1.127.0.el8.x86_64.rpm.part-ab": "885dfa702fb64d783da0cde07ad0dd3488ae6e6fb7bbdc674fde99018e47a39c",
+        "code-1.127.0.el8.x86_64.rpm.part-ac": "d7eee49887b2d91a1d03e20bd76042035db4a515d7ad4aede291ef7635c2fb02",
+        "code-1.127.0.el8.x86_64.rpm.part-ad": "718a9866c0be4dcc14ec05fe694db17a55102ddadba3a6c94ea62d9ef1edf3ef",
+        "code-1.127.0.el8.x86_64.rpm.part-ae": "3675da6ab9c1a965537a9e5678888fef4d2e0fef201cc442c1dbd7c5c411d150",
+        "code-1.127.0.el8.x86_64.rpm.part-af": "5790fcad4ededf1feffe666ba0a0eb8acbaba8d7d5819818908ce418283c7a32"
+      },
+      "reassemble": "cat code-1.127.0.el8.x86_64.rpm.part-* | tar -xJ"
+    }
+  },
+  "compression": "tar.xz",
+  "part_size_mb": 50
+}
