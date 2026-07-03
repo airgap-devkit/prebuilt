@@ -1,0 +1,19 @@
+{
+  "tool": "gcc",
+  "version": "16.1.0",
+  "source": "https://github.com/brechtsanders/winlibs_mingw/releases/tag/16.1.0posix-14.0.0-ucrt-r3",
+  "platforms": {
+    "windows": {
+      "archive": "winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz",
+      "part_sha256": {
+        "winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz.part-aa": "1f649a799369173c333d1f5d2fb71d2467cb347509a59c5453d8aa4cb1aad474",
+        "winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz.part-ab": "2eee59d3977df456d52de0a76ea4c08e6669c3ce93a248f44be80a8774a5cd96",
+        "winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz.part-ac": "4fd9729c3e2275b22fa072a010292d7e1b3ac853364aed0a165b5b8891519b0f",
+        "winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz.part-ad": "592104c32ed9e15f4f94bb91e80036bdba223885b382b9027a43c561cdb92aec"
+      },
+      "reassemble": "cat winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64ucrt-14.0.0-r3.tar.xz.part-* | tar -xJ"
+    }
+  },
+  "compression": "tar.xz",
+  "part_size_mb": 50
+}
