@@ -1,0 +1,18 @@
+{
+  "tool": "cmake",
+  "version": "4.3.3",
+  "source": "https://github.com/Kitware/CMake/releases/tag/v4.3.3",
+  "platforms": {
+    "linux-x64": {
+      "archive": "cmake-4.3.3-linux-x86_64.tar.xz",
+      "sha256": "16731c3af9b92e0a9b816124e95d2125fa15c3f850083192f83d3b81d565784f",
+      "reassemble": "tar -xJf cmake-4.3.3-linux-x86_64.tar.xz"
+    },
+    "windows": {
+      "archive": "cmake-4.3.3-windows-x86_64.tar.xz",
+      "sha256": "6a2fb2b50f9883b7bb8b83e285f3be645cfa760480042bb26df41424ca733244",
+      "reassemble": "tar -xJf cmake-4.3.3-windows-x86_64.tar.xz"
+    }
+  },
+  "compression": "tar.xz"
+}
