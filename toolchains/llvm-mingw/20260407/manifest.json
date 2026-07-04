@@ -1,28 +1,28 @@
 {
   "tool": "llvm-mingw",
   "version": "20260407",
-  "source": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260407",
-  "description": "LLVM/Clang-based MinGW-w64 cross-compiler toolchain (UCRT)",
+  "source": "",
   "platforms": {
-    "windows": {
-      "archive": "llvm-mingw-20260407-ucrt-x86_64.tar.xz",
-      "parts": 2,
-      "part_sha256": {
-        "llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-aa": "9668022f21925e9d9ef1a96aa34df850f365ce74db370df524c7b80bb640fff3",
-        "llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-ab": "f1f8064ab869e02b95baba1795801edee2a26dd4e0653dabec5157cd25fd5bee"
-      },
-      "reassemble": "cat llvm-mingw-20260407-ucrt-x86_64.tar.xz.part-* | tar -xJ"
-    },
     "linux-x64": {
-      "archive": "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz",
-      "parts": 2,
+      "archive": "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.gz",
       "part_sha256": {
-        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-aa": "7b503dfa1d208652923cb5ac3d6ebf00e79b6ca61abc7d722a303926de68fd8e",
-        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-ab": "9b616be53d5dedd56b6738683877d74f28e05079ba645a0eaa878d2f92cc9c7f"
+        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.gz.part-aa": "27275f560de71f6813f0daaf8dc0e6ee6d3fbf33fd9dbcb66fd2b0f0113f714b",
+        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.gz.part-ab": "7d0cb48a04304bb25293c3f3333061fa21d94ef3f301be1ac1a4f871b20c1e15",
+        "llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.gz.part-ac": "a7aa9b51f69843bf1c58290c58cad6eb228cafebb5d4c06e623ca712302aca61"
       },
-      "reassemble": "cat llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.xz.part-* | tar -xJ"
+      "reassemble": "cat llvm-mingw-20260407-ucrt-ubuntu-22.04-x86_64.tar.gz.part-* | tar -xz"
+    },
+    "windows": {
+      "archive": "llvm-mingw-20260407-ucrt-x86_64.zip",
+      "part_sha256": {
+        "llvm-mingw-20260407-ucrt-x86_64.zip.part-aa": "d3eed3b0075f326ed664a341e5dc24fdbae9495e01282e756dd7319cb53b3bd7",
+        "llvm-mingw-20260407-ucrt-x86_64.zip.part-ab": "03cfc4dbe52c942d2c29266fd7013afd47b26dec02a124e9b97567abde177ac7",
+        "llvm-mingw-20260407-ucrt-x86_64.zip.part-ac": "1a9ae85722a8604b8275e85f5e433f9ddee43bbdacba2efd2bba5f2725b339ff",
+        "llvm-mingw-20260407-ucrt-x86_64.zip.part-ad": "65082d54d6dc9f82a6d7daf6bc04d580ddedb6a3b5868817603c74d3b65f6760"
+      },
+      "reassemble": "cat llvm-mingw-20260407-ucrt-x86_64.zip.part-* > llvm-mingw-20260407-ucrt-x86_64.zip && unzip -o llvm-mingw-20260407-ucrt-x86_64.zip"
     }
   },
-  "compression": "tar.xz",
+  "compression": "tar.gz+zip",
   "part_size_mb": 50
 }

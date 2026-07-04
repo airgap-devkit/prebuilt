@@ -3,102 +3,87 @@
 Prebuilt gRPC binaries for Windows x64, compiled with MSVC in Release mode.
 Part of the `airgap-devkit` prebuilt-binaries submodule.
 
+The packages are the **dso-suite maintainer build** (release configuration),
+imported here as split parts by
+[`scripts/internal/import-grpc-prebuilt.sh`](../../../../scripts/internal/import-grpc-prebuilt.sh)
+in the main repo.
+
 ---
 
 ## Available Versions
 
-| Version | Compiler | Arch | Status |
-|---------|----------|------|--------|
-| 1.80.0  | MSVC 19.50 (VS 2026 Insiders) | x64 | current |
-| 1.78.1  | MSVC 19.50 (VS 2026 Insiders) | x64 | previous |
+Because the static libraries are **ABI-locked** to the MSVC toolset they were
+built with, one package ships per Visual Studio version:
+
+| Version | Toolset | Visual Studio | Arch | Status |
+|---------|---------|---------------|------|--------|
+| 1.81.1 | MSVC v143 | Visual Studio 2022 (default) | x64 | current |
+| 1.81.1 | MSVC v145 | Visual Studio 2026 | x64 | current |
+| 1.81.1 | MSVC v142 | Visual Studio 2019 | x64 | current |
 
 ---
 
 ## What's Included
 
-Each version package contains the full `cmake --target install` output:
+Each package extracts to a self-contained, relocatable CMake install prefix:
 
-| Directory  | Contents |
-|------------|----------|
+| Path | Contents |
+|------|----------|
 | `bin/`     | `protoc.exe`, `grpc_cpp_plugin.exe`, all language plugins |
 | `include/` | gRPC, protobuf, abseil-cpp, and all dependency headers |
 | `lib/`     | Static `.lib` files for all gRPC components and dependencies |
-| `share/`   | CMake config files (`find_package(gRPC)` support) |
+| `share/`   | root certs, etc. |
+| `activate.ps1` | per-session env setup (`GRPC_ROOT` + PATH) |
+| `grpc-toolchain.cmake` | forces `/MT` so your app matches the prebuilt libs |
 
 ---
 
-## Installation — Developers (New Machine)
+## Installation
 
-Run from **any PowerShell** (no Visual Studio required):
+Install through the devkit — no Visual Studio required to *consume* the package,
+no internet, no admin:
 
-```powershell
-cd C:\path\to\airgap-devkit\frameworks\grpc
-.\install-prebuilt.ps1 -version 1.80.0 -dest C:\MyInstall\grpc-1.80.0
+```bash
+# CLI (pick the toolset matching your Visual Studio)
+bash tools/frameworks/grpc/setup.sh --toolset v143    # VS 2022 (default)
+bash tools/frameworks/grpc/setup.sh --toolset v145    # VS 2026
+bash tools/frameworks/grpc/setup.sh --toolset v142    # VS 2019
 ```
 
-The script will:
-1. Locate 7-Zip automatically (searches common paths, PATH, and falls back to
-   the vendored `prebuilt-binaries/dev-tools/7zip/7z2600-x64.exe`)
-2. Reassemble the split parts into a single archive
-3. Verify SHA256 integrity against the manifest
-4. Extract to the destination path
-5. Verify key binaries are present
+Or use devkit-ui and pick your Visual Studio version from the gRPC tool's
+selector. The setup script reassembles the split parts, verifies each part's
+SHA256 against `manifest.json`, and extracts to the install prefix.
 
-**No internet access required. No build tools required.**
-
-### Options
-
-| Flag | Default | Description |
-|------|---------|-------------|
-| `-version` | `1.80.0` | gRPC version to install |
-| `-dest` | Auto-detected | Install path (admin → `C:\Program Files\airgap-devkit\grpc-<ver>`, user → `%LOCALAPPDATA%\...`) |
-| `-format` | `7z` if 7-Zip found, else `zip` | Archive format to extract |
-
----
-
-## Building from Source
-
-If you prefer to build gRPC yourself from the vendored source tarball:
-
-```powershell
-cd C:\path\to\airgap-devkit\frameworks\grpc
-.\setup.ps1 -version 1.80.0 -dest C:\MyInstall\grpc-1.80.0
-```
-
-See `frameworks/grpc/README.md` for full build requirements.
+Not sure which toolset you have? Run
+`powershell -File tools/frameworks/grpc/Check-Environment.ps1`.
 
 ---
 
 ## Layout
 
 ```
-prebuilt-binaries/frameworks/grpc/windows/
+prebuilt/frameworks/grpc/windows/
 ├── README.md                  <- this file
-├── 1.80.0/
-│   ├── manifest.json          <- SHA256 hashes for all parts
-│   ├── grpc-1.80.0-windows-x64.7z.part-aa    <- .7z ultra compressed parts
-│   ├── grpc-1.80.0-windows-x64.7z.part-ab
-│   ├── ...
-│   ├── grpc-1.80.0-windows-x64.zip.part-aa   <- .zip ultra compressed parts
-│   ├── grpc-1.80.0-windows-x64.zip.part-ab
-│   └── ...
-└── 1.78.1/                    <- previous version
-    └── ...
+└── 1.81.1/
+    ├── manifest.json          <- per-toolset SHA256 (full archive + parts) + variants
+    ├── grpc-1.81.1-msvc142-x64-release.zip.part-aa .. part-ae
+    ├── grpc-1.81.1-msvc143-x64-release.zip.part-aa .. part-ae
+    └── grpc-1.81.1-msvc145-x64-release.zip.part-aa .. part-ae
 ```
 
 ---
 
 ## Integrity
 
-All parts are SHA256-verified before reassembly. Hashes are stored in
-`manifest.json` alongside each version and were self-computed at package time.
+Every part is SHA256-verified before reassembly, and the reassembled archive is
+verified against the full-archive SHA256. Hashes live in `manifest.json` next to
+the parts.
 
 ---
 
 ## Notes
 
-- These binaries are **Windows x64 only**. For Linux, build from source using
-  the vendored tarball in `frameworks/grpc/vendor/`.
-- The `.7z` format produces significantly smaller archives than `.zip` and is
-  preferred when 7-Zip is available.
+- **Windows x64 only.**
+- Only the **Release** packages ship in the product. Debug packages (much larger)
+  remain upstream in `dso-suite/grpc/dist/` for maintainers.
 - Parts are split at `<=45MB` to stay within git's per-file size limits.

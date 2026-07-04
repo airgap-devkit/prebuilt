@@ -1,20 +1,17 @@
 {
   "tool": "gcc-toolset",
   "version": "15",
-  "description": "GCC toolset-15 RPM bundle for RHEL 8. Includes gcc, g++, gcov, gdb.",
+  "source": "",
   "platforms": {
-    "linux-rhel8": {
-      "archive": "gcc-toolset-15-rhel8-rpms.tar.xz",
-      "parts": 2,
+    "linux-x64": {
+      "archive": "gcc-toolset-15-rhel8-rpms.zip",
       "part_sha256": {
-        "gcc-toolset-15-rhel8-rpms.tar.xz.part-aa": "18dd400b53a6f7d4d56b59e7a6ad87387e6aaa8faf0aab3f8ed56a0f0e3fb42a",
-        "gcc-toolset-15-rhel8-rpms.tar.xz.part-ab": "7c6ae3b8c09c2f90e22ac6df9d4f0b8d3f603d34a25b819f42b5f977bd6a6273"
+        "gcc-toolset-15-rhel8-rpms.zip.part-aa": "c326d392f9ee53ecdb9608d6f48d1f72e83d3189fad034bc2eb6ae8ca3da2833",
+        "gcc-toolset-15-rhel8-rpms.zip.part-ab": "68310fb285172b0c8432b2f6b5bbb6c266d9533f7bbf294f6d9146dde576a06d"
       },
-      "reassemble": "cat gcc-toolset-15-rhel8-rpms.tar.xz.part-* | tar -xJ",
-      "install": "rpm -ivh *.rpm"
+      "reassemble": "cat gcc-toolset-15-rhel8-rpms.zip.part-* > gcc-toolset-15-rhel8-rpms.zip && unzip -o gcc-toolset-15-rhel8-rpms.zip"
     }
   },
-  "compression": "tar.xz",
-  "part_size_mb": 50,
-  "notes": "gcov is included with gcc-toolset-15. Use with lcov for coverage reports."
+  "compression": "zip",
+  "part_size_mb": 50
 }

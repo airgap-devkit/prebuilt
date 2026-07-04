@@ -1,22 +1,18 @@
 {
   "tool": "ninja",
   "version": "1.13.2",
-  "source": "https://github.com/ninja-build/ninja/releases/tag/v1.13.2",
-  "description": "Fast build system. Used by LLVM/CMake builds.",
+  "source": "",
   "platforms": {
-    "windows": {
-      "archive": "ninja-1.13.2-windows.tar.xz",
-      "sha256": "3dbd4ad9933d6d39c5e507d0add236d952ab39e513d376fdd9b157bf81cebdb2",
-      "binary": "ninja.exe",
-      "reassemble": "tar -xJf ninja-1.13.2-windows.tar.xz"
-    },
     "linux-x64": {
-      "archive": "ninja-1.13.2-linux.tar.xz",
-      "sha256": "1c645d6d45d95c3e02e9b9e4b7247b53e4d2d22281bc15af2be3eb90343f13b7",
-      "binary": "ninja",
-      "reassemble": "tar -xJf ninja-1.13.2-linux.tar.xz"
+      "archive": "ninja-1.13.2-linux.tar.gz",
+      "sha256": "7a9da8821e4663ed97ca04081969b156a1b1b07683f86058b4c35a7a58758b90",
+      "reassemble": "tar -xzf ninja-1.13.2-linux.tar.gz"
+    },
+    "windows": {
+      "archive": "ninja-1.13.2-windows.zip",
+      "sha256": "d6bfb86c1bed1516237a0118cf0197a2f6517ab59f7e924d6ccd3a59df9887d3",
+      "reassemble": "unzip -o ninja-1.13.2-windows.zip"
     }
   },
-  "compression": "tar.xz",
-  "part_size_mb": 50
+  "compression": "tar.gz+zip"
 }

@@ -1,18 +1,17 @@
 {
   "tool": "osslsigncode",
   "version": "2.13",
-  "source": "https://github.com/mtrojnar/osslsigncode/releases/tag/2.13",
+  "source": "",
   "platforms": {
     "windows": {
       "archive": "osslsigncode-2.13-windows-x64-mingw.zip",
-      "sha256": "c6d3ec8f383a6ed204503a9d4445788f2d3e71da87f3604c42e40167ad9ceb8e"
+      "sha256": "c6d3ec8f383a6ed204503a9d4445788f2d3e71da87f3604c42e40167ad9ceb8e",
+      "reassemble": "unzip -o osslsigncode-2.13-windows-x64-mingw.zip"
     },
     "linux-x64": {
-      "binary": "osslsigncode-linux-amd64",
-      "sha256": "1b496b689eec628063259ec4b898f2c56bd39f62ded693a7f1c02028337b9e68",
-      "notes": "Statically linked (OpenSSL 3.0.13 + zlib 1.3, no curl). Runs on glibc 2.17+ and musl. No runtime deps.",
-      "source_archive": "tools/dev-tools/osslsigncode/sources/osslsigncode-2.13.tar.gz",
-      "source_sha256": "ee95638b8bec0c019ddf28cb14988645abbd180dcd017536338b7d0d5eaaea96"
+      "archive": "osslsigncode-linux-amd64",
+      "sha256": "1b496b689eec628063259ec4b898f2c56bd39f62ded693a7f1c02028337b9e68"
     }
-  }
+  },
+  "compression": "zip"
 }

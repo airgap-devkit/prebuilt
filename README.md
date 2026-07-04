@@ -72,9 +72,12 @@ Conan 2.27.1 self-contained executables. Both files under 49MB -- no split requi
 | `conan-2.27.1-windows-x86_64.zip` | Windows x86_64 |
 | `conan-2.27.1-linux-x86_64.tgz` | Linux x86_64 |
 
-### `frameworks/grpc/windows/1.80.0/`
-gRPC v1.80.0 prebuilt for Windows x64 (MSVC 19.50, Release).
-Full `cmake --target install` output: `bin/`, `include/`, `lib/`, `share/`.
+### `frameworks/grpc/windows/1.81.1/`
+gRPC v1.81.1 prebuilt for Windows x64 (Release), one package per MSVC toolset —
+`v142` (VS 2019), `v143` (VS 2022, default), `v145` (VS 2026). Each extracts to a
+relocatable install prefix: `bin/`, `include/`, `lib/`, `share/`, plus
+`activate.ps1` and `grpc-toolchain.cmake`. Imported from dso-suite via
+`scripts/internal/import-grpc-prebuilt.sh`.
 
 | Format | Size | Parts | Split at |
 |--------|------|-------|----------|

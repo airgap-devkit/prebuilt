@@ -1,24 +1,21 @@
 {
   "tool": "winlibs-gcc",
   "version": "15.2.0",
-  "mingw_w64_version": "14.0.0",
-  "runtime": "ucrt",
-  "release": "r7",
-  "source": "https://github.com/brechtsanders/winlibs_mingw/releases/tag/15.2.0posix-14.0.0-ucrt-r7",
-  "description": "WinLibs GCC 15.2.0 MinGW-w64 UCRT toolchain for Windows. Includes gcc, g++, gcov, gdb.",
+  "source": "",
   "platforms": {
     "windows": {
-      "archive": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz",
-      "parts": 4,
+      "archive": "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip",
       "part_sha256": {
-        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-aa": "8b5f25be465cb668de860eb84957e6264be836809b2c3e7af525f2171584ac2d",
-        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ab": "ff260590e4802e5ebd62159af295377d91f3ce79ad23f6e039d8ec4b902acb98",
-        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ac": "14db63ef8c86782c2e408b23a72cb499457b1c6c3eeb36e7646498da318dc9cf",
-        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-ad": "4386b14b3f70cd897e00f621a80146dd811774f80f671d707a61cb23831eda18"
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-aa": "541bff3b912c1f46c0bb22e55ffad428c030db1bc5ec18f95a7d8f3ab0710ec8",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-ab": "81bc5f5a263b96176b98e033bf97aed0dbf042bac7a28ad02e6f7fb8fb6128a2",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-ac": "94323bb0585ffaa6aeceb0cd56ad4862eee71e90b20678310d126d3def00c699",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-ad": "cf2c770c4653e7c9cd3e49062944be2a039fea03f89116e3d91251532ab5e68b",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-ae": "95b96b5a29cb6479035ed570433ea060d116069d56be9d9ca0d82505d157106d",
+        "winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-af": "cc8e460bd0c1712f26002e7c5bbe5f7c6d164473d858e8e60f5ea70688917643"
       },
-      "reassemble": "cat winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.tar.xz.part-* | tar -xJ"
+      "reassemble": "cat winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip.part-* > winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip && unzip -o winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-14.0.0-r7.zip"
     }
   },
-  "compression": "tar.xz",
+  "compression": "zip",
   "part_size_mb": 50
 }
