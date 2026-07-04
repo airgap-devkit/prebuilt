@@ -1,0 +1,18 @@
+{
+  "tool": "conan",
+  "version": "2.30.0",
+  "source": "",
+  "platforms": {
+    "linux-x64": {
+      "archive": "conan-2.30.0-linux-x86_64.tar.gz",
+      "sha256": "7956bbf45bdac0e14cf36e439f772daa0089c4f7551fe935121599f4d999b6f9",
+      "reassemble": "tar -xzf conan-2.30.0-linux-x86_64.tar.gz"
+    },
+    "windows": {
+      "archive": "conan-2.30.0-windows-x86_64.zip",
+      "sha256": "d2ea64d2691e39da286b51e1a54fe80fa02c9734168fbfed3d302f54b299a29a",
+      "reassemble": "unzip -o conan-2.30.0-windows-x86_64.zip"
+    }
+  },
+  "compression": "tar.gz+zip"
+}

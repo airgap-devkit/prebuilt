@@ -1,0 +1,17 @@
+{
+  "tool": "7zip",
+  "version": "26.02",
+  "source": "",
+  "platforms": {
+    "linux-x64": {
+      "archive": "7z2602-linux-x64.tar.gz",
+      "sha256": "eb493bb2596d66c9102dd2cf574dceb232fb09c3f48b74af7d345772ea96a2d3",
+      "reassemble": "tar -xzf 7z2602-linux-x64.tar.gz"
+    },
+    "windows": {
+      "installer": "7z2602-x64.exe",
+      "sha256": "6745fa76dc2ea031596d8678f6f6b99c3c1b435b4164a63485adbbc7b8d82ef0"
+    }
+  },
+  "compression": "exe+tar.gz"
+}

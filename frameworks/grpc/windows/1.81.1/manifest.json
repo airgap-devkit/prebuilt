@@ -1,0 +1,75 @@
+{
+  "tool": "grpc",
+  "version": "1.81.1",
+  "source": "https://github.com/grpc/grpc/releases/tag/v1.81.1",
+  "provenance": "dso-suite/grpc (maintainer prebuilt, release configuration)",
+  "platforms": {
+    "windows-msvc143": {
+      "archive": "grpc-1.81.1-msvc143-x64-release.zip",
+      "toolset": "v143",
+      "vs_version": "Visual Studio 2022",
+      "sha256": "0229b40f72975efb30d2b625654b1a5622274eda2a7d6a384e27572fe01734d8",
+      "part_sha256": {
+        "grpc-1.81.1-msvc143-x64-release.zip.part-aa": "c00e7d3dafc99656bc729e0394f2b041ec0bf76de4ff5529796fdc318bc37b1b",
+        "grpc-1.81.1-msvc143-x64-release.zip.part-ab": "ec3ddc072721007541aec8756d6e65db47f272cd6cf4b56bdedad0b0348b506e",
+        "grpc-1.81.1-msvc143-x64-release.zip.part-ac": "a313ffde182e245f956b495fab8ffeb8e73559781b053e38d3de65ba1ee44fbf",
+        "grpc-1.81.1-msvc143-x64-release.zip.part-ad": "1be2eb587916790972f4e819f5c935c32eeb40f91928daa48c1abcd3aec6ab64",
+        "grpc-1.81.1-msvc143-x64-release.zip.part-ae": "b99e5342aa2645f6b4f22c5123ad37fc462b48243144ebaac53afafb32f645b9"
+      },
+      "reassemble": "cat grpc-1.81.1-msvc143-x64-release.zip.part-* > grpc-1.81.1-msvc143-x64-release.zip && unzip -o grpc-1.81.1-msvc143-x64-release.zip"
+    },
+    "windows-msvc145": {
+      "archive": "grpc-1.81.1-msvc145-x64-release.zip",
+      "toolset": "v145",
+      "vs_version": "Visual Studio 2026",
+      "sha256": "1b248828798126d4283b07f4cab520970cef93778fb941e5acb5bb91f68d27e2",
+      "part_sha256": {
+        "grpc-1.81.1-msvc145-x64-release.zip.part-aa": "050bfbafcd9e05bc2a47b429394406c3e2ffbccc5fb58d68070475771b3f4856",
+        "grpc-1.81.1-msvc145-x64-release.zip.part-ab": "aa8af21062b7d984086a9d9e51e2364d3b65d25484a96b575c2f3c88b822377e",
+        "grpc-1.81.1-msvc145-x64-release.zip.part-ac": "b7886485dea2fac8a9756e68dff7f5a0cc5f235b4846dbfa3348a94fcb37e8c7",
+        "grpc-1.81.1-msvc145-x64-release.zip.part-ad": "81c00e5c4d6bacb04741af1a468cf346d47ff6934cde3015806d50f35d9748e6",
+        "grpc-1.81.1-msvc145-x64-release.zip.part-ae": "dcb5ccc36ee9b642b199234304141c2f4f8f2be1e9a6932c6fb5678fe2a30ee7"
+      },
+      "reassemble": "cat grpc-1.81.1-msvc145-x64-release.zip.part-* > grpc-1.81.1-msvc145-x64-release.zip && unzip -o grpc-1.81.1-msvc145-x64-release.zip"
+    },
+    "windows-msvc142": {
+      "archive": "grpc-1.81.1-msvc142-x64-release.zip",
+      "toolset": "v142",
+      "vs_version": "Visual Studio 2019",
+      "sha256": "2c1b5d31635f1e9bb5760d78d9b3987b38008e8a97b8dbb08f6e152607c1d1ba",
+      "part_sha256": {
+        "grpc-1.81.1-msvc142-x64-release.zip.part-aa": "32f4ac2f80dd70a12b12fe0108e83a0419c688895a891492d8774cb2cba4323c",
+        "grpc-1.81.1-msvc142-x64-release.zip.part-ab": "cdb9042e7d45285deb08eabbadabf42d93ad890c4e8ecb604f81d2e9d74c93bf",
+        "grpc-1.81.1-msvc142-x64-release.zip.part-ac": "c87d7c37226f4addb275df7e70734df6631b2d99a5ad4ef2f9c714483860f838",
+        "grpc-1.81.1-msvc142-x64-release.zip.part-ad": "f54e0eb13cf739f279fa2b7eb29ed65371e2399454f893d4422574059eab09fd",
+        "grpc-1.81.1-msvc142-x64-release.zip.part-ae": "17c9cf56d9d896f647645a239725fc5b281ae7a6a23fc7616fb3a756f9b87090"
+      },
+      "reassemble": "cat grpc-1.81.1-msvc142-x64-release.zip.part-* > grpc-1.81.1-msvc142-x64-release.zip && unzip -o grpc-1.81.1-msvc142-x64-release.zip"
+    }
+  },
+  "compression": "zip",
+  "part_size_mb": 45,
+  "variants": [
+    {
+      "id": "v143",
+      "toolset": "v143",
+      "vs_version": "Visual Studio 2022",
+      "archive": "grpc-1.81.1-msvc143-x64-release.zip",
+      "default": true
+    },
+    {
+      "id": "v145",
+      "toolset": "v145",
+      "vs_version": "Visual Studio 2026",
+      "archive": "grpc-1.81.1-msvc145-x64-release.zip",
+      "default": false
+    },
+    {
+      "id": "v142",
+      "toolset": "v142",
+      "vs_version": "Visual Studio 2019",
+      "archive": "grpc-1.81.1-msvc142-x64-release.zip",
+      "default": false
+    }
+  ]
+}
