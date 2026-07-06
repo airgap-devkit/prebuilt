@@ -3,8 +3,8 @@
 Prebuilt gRPC binaries for Windows x64, compiled with MSVC in Release mode.
 Part of the `airgap-devkit` prebuilt-binaries submodule.
 
-The packages are the **dso-suite maintainer build** (release configuration),
-imported here as split parts by
+The packages are a **maintainer build** (release configuration), imported here
+as split parts by
 [`scripts/internal/import-grpc-prebuilt.sh`](../../../../scripts/internal/import-grpc-prebuilt.sh)
 in the main repo.
 
@@ -85,5 +85,5 @@ the parts.
 
 - **Windows x64 only.**
 - Only the **Release** packages ship in the product. Debug packages (much larger)
-  remain upstream in `dso-suite/grpc/dist/` for maintainers.
+  are kept out of the product by maintainers.
 - Parts are split at `<=45MB` to stay within git's per-file size limits.

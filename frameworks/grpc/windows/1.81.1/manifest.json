@@ -2,7 +2,7 @@
   "tool": "grpc",
   "version": "1.81.1",
   "source": "https://github.com/grpc/grpc/releases/tag/v1.81.1",
-  "provenance": "dso-suite/grpc (maintainer prebuilt, release configuration)",
+  "provenance": "grpc (maintainer prebuilt, release configuration)",
   "platforms": {
     "windows-msvc143": {
       "archive": "grpc-1.81.1-msvc143-x64-release.zip",

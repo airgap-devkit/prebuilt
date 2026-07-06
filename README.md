@@ -76,7 +76,7 @@ Conan 2.27.1 self-contained executables. Both files under 49MB -- no split requi
 gRPC v1.81.1 prebuilt for Windows x64 (Release), one package per MSVC toolset —
 `v142` (VS 2019), `v143` (VS 2022, default), `v145` (VS 2026). Each extracts to a
 relocatable install prefix: `bin/`, `include/`, `lib/`, `share/`, plus
-`activate.ps1` and `grpc-toolchain.cmake`. Imported from dso-suite via
+`activate.ps1` and `grpc-toolchain.cmake`. Imported via
 `scripts/internal/import-grpc-prebuilt.sh`.
 
 | Format | Size | Parts | Split at |
