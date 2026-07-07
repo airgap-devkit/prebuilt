@@ -1,0 +1,17 @@
+{
+  "tool": "lcov",
+  "version": "2.5",
+  "source": "https://github.com/linux-test-project/lcov/releases/tag/v2.5",
+  "platforms": {
+    "linux-x64": {
+      "package": "lcov-2.5-0.noarch.rpm",
+      "sha256": "34ddce86cbac7bfd80a9f9d7f325d50fe7fcc041f5c3bb4ba0bba0763eeebcd0"
+    },
+    "windows": {
+      "archive": "lcov-2.5.zip",
+      "sha256": "b976979c95ef213c85dca1637b2305c93d79fd84098f7c5c4d1d43ba65a830d1",
+      "reassemble": "unzip -o lcov-2.5.zip"
+    }
+  },
+  "compression": "rpm+zip"
+}
