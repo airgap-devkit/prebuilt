@@ -1,0 +1,17 @@
+{
+  "tool": "servy",
+  "version": "8.6",
+  "source": "https://github.com/aelassas/servy/releases/tag/v8.6",
+  "platforms": {
+    "windows": {
+      "archive": "servy-8.6-x64-installer.exe",
+      "part_sha256": {
+        "servy-8.6-x64-installer.exe.part-aa": "f47d8856d3456b9a6c796163d64222c910d9c0a277407fc39c9f942c0612c05c",
+        "servy-8.6-x64-installer.exe.part-ab": "70688b1f7e4c4bba23451e3283b88906c1b50f6025ad0c016bbdc6b87ddc52d3"
+      },
+      "reassemble": "cat servy-8.6-x64-installer.exe.part-* > servy-8.6-x64-installer.exe"
+    }
+  },
+  "compression": "exe",
+  "part_size_mb": 50
+}
