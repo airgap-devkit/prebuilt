@@ -98,6 +98,22 @@
         "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-az": "db139d1e3f7fc0ee98a9dbc1109a07b576f06a955b898b74d273a8d2971a2179"
       },
       "reassemble": "cat clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-* > clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip && unzip -o clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip"
+    },
+    "linux-rhel8": {
+      "archive": "LLVM-22.1.8-Linux-X64-rhel8.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-aa": "9df28fea4fbe1e77baba91afd0347c7993d518c1fb6df60f07bcaf92d7805c00",
+        "LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-ab": "a487d36d36827f3d8338f34d40abac1d07feea20475aa178b9e5ba8fda87036b"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-* | tar -xJ"
+    },
+    "linux-rhel10": {
+      "archive": "LLVM-22.1.8-Linux-X64-rhel10.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-aa": "9f857ed961b11bd614f96d28bd1c87f403e88e5129e88e595fb567b0d0f51c52",
+        "LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-ab": "3e7e3abc3869b463a0752eb6c84cecfdb516910b19210b6a1b819aced88d8b03"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-* | tar -xJ"
     }
   },
   "compression": "tar.gz+zip",
