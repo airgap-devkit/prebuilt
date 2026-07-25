@@ -1,7 +1,18 @@
 {
   "tool": "zlib",
   "version": "1.3.2",
-  "source": "",
-  "platforms": {},
-  "compression": ""
+  "source": "https://zlib.net/ (windows zlib132.zip); https://github.com/madler/zlib/releases/tag/v1.3.2 (linux tar.gz)",
+  "platforms": {
+    "windows": {
+      "archive": "zlib132.zip",
+      "sha256": "e8bf55f3017aa181690990cb58a994e77885da140609fc8f94abe9b65d2cae28",
+      "reassemble": "unzip -o zlib132.zip"
+    },
+    "linux": {
+      "archive": "zlib-1.3.2.tar.gz",
+      "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16",
+      "reassemble": "tar -xzf zlib-1.3.2.tar.gz"
+    }
+  },
+  "compression": "tar.gz+zip"
 }
