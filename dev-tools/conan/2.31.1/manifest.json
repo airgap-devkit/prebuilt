@@ -1,0 +1,18 @@
+{
+  "tool": "conan",
+  "version": "2.31.1",
+  "source": "https://github.com/conan-io/conan/releases/tag/2.31.1",
+  "platforms": {
+    "linux-x64": {
+      "archive": "conan-2.31.1-linux-x86_64.tar.gz",
+      "sha256": "0e3371a817c9f3b60e2af0fdbf4fdec80c882749ce4251a5dd998d525cba069e",
+      "reassemble": "tar -xzf conan-2.31.1-linux-x86_64.tar.gz"
+    },
+    "windows": {
+      "archive": "conan-2.31.1-windows-x86_64.zip",
+      "sha256": "b42491ccf90ef6ed433e465c00806b1b5a3d958b315adb7b01d1b6d232f17c14",
+      "reassemble": "unzip -o conan-2.31.1-windows-x86_64.zip"
+    }
+  },
+  "compression": "tar.gz+zip"
+}

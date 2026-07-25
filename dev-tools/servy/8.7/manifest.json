@@ -1,0 +1,17 @@
+{
+  "tool": "servy",
+  "version": "8.7",
+  "source": "https://github.com/aelassas/servy/releases/tag/v8.7",
+  "platforms": {
+    "windows": {
+      "archive": "servy-8.7-x64-installer.exe",
+      "part_sha256": {
+        "servy-8.7-x64-installer.exe.part-aa": "45d36c935c7947a853335a0418fb656e3a234679c276c61e3b44efa1569f3da0",
+        "servy-8.7-x64-installer.exe.part-ab": "a7f54c69f8511ca02b48ef7e5386fcc343b2d7bca132c755f6f93d0213da6807"
+      },
+      "reassemble": "cat servy-8.7-x64-installer.exe.part-* > servy-8.7-x64-installer.exe"
+    }
+  },
+  "compression": "exe",
+  "part_size_mb": 50
+}
