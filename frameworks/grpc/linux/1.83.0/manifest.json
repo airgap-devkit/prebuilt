@@ -1,0 +1,28 @@
+{
+  "tool": "grpc",
+  "version": "1.83.0",
+  "source": "https://github.com/grpc/grpc/releases/tag/v1.83.0",
+  "provenance": "grpc (maintainer prebuilt, RHEL 8/9 gcc-toolset release, static libstdc++)",
+  "platforms": {
+    "linux-x86_64": {
+      "archive": "grpc-1.83.0-linux-x86_64.tar.gz",
+      "config": "release",
+      "sha256": "a6df87ad0e101ca1f04c7f15fc5bed5f7460c1b4cb25ea34a70567dc7ab2d634",
+      "part_sha256": {
+        "grpc-1.83.0-linux-x86_64.tar.gz.part-aa": "b9a9aabf7aa7b837088bd9f582a6dcfaf1bbebcc47eb76d81abab01f7c1895b6",
+        "grpc-1.83.0-linux-x86_64.tar.gz.part-ab": "1ce7bcc089d1ad30c8b6b5a45d8097cfdae616aa14ec52cb7553db5b804ca342"
+      },
+      "reassemble": "cat grpc-1.83.0-linux-x86_64.tar.gz.part-* > grpc-1.83.0-linux-x86_64.tar.gz && tar xzf grpc-1.83.0-linux-x86_64.tar.gz"
+    }
+  },
+  "compression": "tar.gz",
+  "part_size_mb": 45,
+  "variants": [
+    {
+      "id": "linux",
+      "archive": "grpc-1.83.0-linux-x86_64.tar.gz",
+      "config": "release",
+      "default": true
+    }
+  ]
+}
