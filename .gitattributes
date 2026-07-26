@@ -1,1 +1,3 @@
 *.rpm binary
+# Extensionless prebuilt ELF binaries (e.g. static sqlite3) — never EOL-convert.
+sqlite3-*-linux-x64-* binary

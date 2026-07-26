@@ -1,12 +1,22 @@
 {
   "tool": "sqlite",
   "version": "3.53.3",
-  "source": "sqlite.org (windows CLI tools); RHEL/Rocky distro system RPMs per major (linux)",
+  "source": "sqlite.org (windows CLI tools + amalgamation for static builds); RHEL/Rocky distro system RPMs per major (linux)",
   "platforms": {
     "windows": {
       "archive": "sqlite-tools-win-x64-3530300.zip",
       "sha256": "c90fe36442cf573e8a19b3e8733d121622b8e2d5a0c47cbda97aeba9517d1c45",
       "reassemble": "unzip -o sqlite-tools-win-x64-3530300.zip"
+    },
+    "linux-glibc-static": {
+      "archive": "sqlite3-3.53.3-linux-x64-glibc",
+      "sha256": "1f8e0c13b267ef621d7112fca522cee4220f088648fc7a263b6807c89e71a427",
+      "reassemble": "install -m755 sqlite3-3.53.3-linux-x64-glibc <prefix>/bin/sqlite3"
+    },
+    "linux-musl-static": {
+      "archive": "sqlite3-3.53.3-linux-x64-musl",
+      "sha256": "5b6bde9535348cc494d6cc2ed69500b0365eebb3ce678a2fffb260bfc218876b",
+      "reassemble": "install -m755 sqlite3-3.53.3-linux-x64-musl <prefix>/bin/sqlite3"
     },
     "linux-rhel8": {
       "archive": "sqlite-3.26.0-20.el8_10.x86_64.rpm",
