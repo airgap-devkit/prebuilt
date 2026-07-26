@@ -8,6 +8,11 @@
       "sha256": "7a9da8821e4663ed97ca04081969b156a1b1b07683f86058b4c35a7a58758b90",
       "reassemble": "tar -xzf ninja-1.13.2-linux.tar.gz"
     },
+    "linux-x64-musl": {
+      "archive": "ninja-1.13.2-linux-musl.tar.gz",
+      "sha256": "e62a85f918af5638a75a872a8c9034ead3053384935778219080608f133db4c8",
+      "reassemble": "tar -xzf ninja-1.13.2-linux-musl.tar.gz"
+    },
     "windows": {
       "archive": "ninja-1.13.2-windows.zip",
       "sha256": "d6bfb86c1bed1516237a0118cf0197a2f6517ab59f7e924d6ccd3a59df9887d3",

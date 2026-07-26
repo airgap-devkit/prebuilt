@@ -15,6 +15,11 @@
         "cmake-4.3.3-linux-x86_64.tar.gz.part-ab": "f2cfefb94d7b6c7324bc1339ae1579ed059cccf1717a011c9e12e58465d8ea8f"
       },
       "reassemble": "cat cmake-4.3.3-linux-x86_64.tar.gz.part-* | tar -xz"
+    },
+    "linux-x64-musl": {
+      "archive": "cmake-4.3.3-linux-x86_64-musl.tar.gz",
+      "sha256": "e73a35f1e7dbb9644e7ff2b5fdd738ae47b2cd9c7a4702df4a54de3cb30635b8",
+      "reassemble": "tar -xzf cmake-4.3.3-linux-x86_64-musl.tar.gz"
     }
   },
   "compression": "tar.gz+zip",
