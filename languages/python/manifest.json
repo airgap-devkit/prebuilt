@@ -1,7 +1,7 @@
 {
   "tool": "python",
   "version": "3.14.6",
-  "source": "https://www.python.org/ftp/python/3.14.6/ (windows amd64.zip); https://github.com/astral-sh/python-build-standalone release 20260718 (linux install_only)",
+  "source": "https://www.python.org/ftp/python/3.14.6/ (windows amd64.zip); https://github.com/astral-sh/python-build-standalone release 20260718 (linux glibc + musl install_only)",
   "platforms": {
     "windows": {
       "archive": "python-3.14.6-amd64.zip",
@@ -16,6 +16,15 @@
         "cpython-3.14.6-linux-x64.tar.gz.part-ac": "6701e71f80936647761863b7ceeeacef8a5804231139d239e9e4c5a584393d19"
       },
       "reassemble": "cat cpython-3.14.6-linux-x64.tar.gz.part-* | tar -xz"
+    },
+    "linux-x64-musl": {
+      "archive": "cpython-3.14.6-linux-x64-musl.tar.gz",
+      "part_sha256": {
+        "cpython-3.14.6-linux-x64-musl.tar.gz.part-aa": "9736d85adf67159176140196a4bc6a62980a34731c95605ee846af40b57f22f2",
+        "cpython-3.14.6-linux-x64-musl.tar.gz.part-ab": "15c1f3316351550125f6e7e7c6a83c796dff412a77d71f9a3d9e71706e59dec0",
+        "cpython-3.14.6-linux-x64-musl.tar.gz.part-ac": "d7cd2c7dab1d5d5676394920bd8a52902b754f2576e5e67584888a7e6fc2cb3a"
+      },
+      "reassemble": "cat cpython-3.14.6-linux-x64-musl.tar.gz.part-* | tar -xz"
     }
   },
   "compression": "tar.gz+zip",
