@@ -11,6 +11,11 @@
       "archive": "lcov-2.5.zip",
       "sha256": "b976979c95ef213c85dca1637b2305c93d79fd84098f7c5c4d1d43ba65a830d1",
       "reassemble": "unzip -o lcov-2.5.zip"
+    },
+    "perl-vendor": {
+      "archive": "perl-vendor-lcov.zip",
+      "sha256": "80fa9b14a97b3421a2df124668a93b324785f78ac2ca24ccaba6ddc595714035",
+      "reassemble": "unzip -o perl-vendor-lcov.zip"
     }
   },
   "compression": "rpm+zip"
