@@ -14,7 +14,7 @@
     },
     "perl-vendor": {
       "archive": "perl-vendor-lcov.zip",
-      "sha256": "80fa9b14a97b3421a2df124668a93b324785f78ac2ca24ccaba6ddc595714035",
+      "sha256": "2c70e8b36e8e03246b132e93613e6e16e1938acfda8d2eb67009ead9f9de8345",
       "reassemble": "unzip -o perl-vendor-lcov.zip"
     }
   },
