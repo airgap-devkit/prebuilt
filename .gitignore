@@ -3,3 +3,9 @@
 *.jpeg
 # Assembled from split parts by setup.sh — do not commit
 dev-tools/vscode/1.117.0/code-1.117.0.el8.x86_64.rpm
+
+# prebuilt is where binaries live — a global gitignore (e.g. *.exe) must never
+# silently drop a staged payload from the submodule. Re-include installer types.
+!*.exe
+!*.msi
+!*.dll
