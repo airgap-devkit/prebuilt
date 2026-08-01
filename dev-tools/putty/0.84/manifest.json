@@ -1,0 +1,12 @@
+{
+  "tool": "putty",
+  "version": "0.84",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "archive": "putty-64bit-0.84-installer.msi",
+      "sha256": "190d00150e67ad3ff51af4b50e76a3ab97b863a34efd50472627b17c0cf4102b"
+    }
+  },
+  "compression": ""
+}

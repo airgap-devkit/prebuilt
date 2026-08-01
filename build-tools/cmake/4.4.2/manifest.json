@@ -1,0 +1,30 @@
+{
+  "tool": "cmake",
+  "version": "4.4.2",
+  "source": "https://github.com/Kitware/CMake/releases/tag/v4.4.2",
+  "platforms": {
+    "windows": {
+      "archive": "cmake-4.4.2-windows-x86_64.zip",
+      "part_sha256": {
+        "cmake-4.4.2-windows-x86_64.zip.part-aa": "49cb12fc21beef40481f4b4e943ee184795da2e2133606316f96f164a5f7c69e",
+        "cmake-4.4.2-windows-x86_64.zip.part-ab": "470475a7650c6ccc04931f91df03e26968602140d186a4cc21d4c260dfc5dd3e"
+      },
+      "reassemble": "cat cmake-4.4.2-windows-x86_64.zip.part-* > cmake-4.4.2-windows-x86_64.zip && unzip -o cmake-4.4.2-windows-x86_64.zip"
+    },
+    "linux-x64": {
+      "archive": "cmake-4.4.2-linux-x86_64.tar.gz",
+      "part_sha256": {
+        "cmake-4.4.2-linux-x86_64.tar.gz.part-aa": "a5a5de24e70ac0d518c7fa7bf4ca6dab8abf16edc2d54a54748d392fd17c6bf0",
+        "cmake-4.4.2-linux-x86_64.tar.gz.part-ab": "55da92e087ed13378ad9492fbd4943425bdc608c2e2a7ae76ff0ddefc365fc21"
+      },
+      "reassemble": "cat cmake-4.4.2-linux-x86_64.tar.gz.part-* | tar -xz"
+    },
+    "linux-x64-musl": {
+      "archive": "cmake-4.4.2-linux-x86_64-musl.tar.gz",
+      "sha256": "da10ae454f5229f32197ff7aacd4e311d57916874d1481a25f0be71f62dcfa98",
+      "reassemble": "tar -xzf cmake-4.4.2-linux-x86_64-musl.tar.gz"
+    }
+  },
+  "compression": "tar.gz+zip",
+  "part_size_mb": 50
+}

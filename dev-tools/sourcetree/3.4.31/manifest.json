@@ -1,0 +1,12 @@
+{
+  "tool": "sourcetree",
+  "version": "3.4.31",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "installer": "SourceTreeSetup-3.4.31.exe",
+      "sha256": "90c1634a01e8e3b6f6745b5bb5a484987b3902f9f922bd24021b12f7d14e47f0"
+    }
+  },
+  "compression": "exe"
+}
