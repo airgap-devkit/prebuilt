@@ -48,15 +48,6 @@ CMake 4.3.1 prebuilt binaries. Both files are under 49MB -- no split required.
 | `cmake-4.3.1-linux-x86_64.tar.gz` | Linux x86_64 |
 | `cmake-4.3.1.tar.gz` | Source tarball |
 
-### `dev-tools/7zip/`
-7-Zip 26.00 prebuilt binaries for Windows and Linux. All files under 49MB.
-
-| File | Purpose |
-|------|---------|
-| `7z2600-x64.exe` | Windows admin installer |
-| `7z2600-extra.7z` | Windows portable (7za.exe) |
-| `7z2600-linux-x64.tar.xz` | Linux 7zz binary |
-
 ### `dev-tools/servy/`
 Servy 7.9 Windows service manager. Single file under 100MB -- no split required.
 
@@ -157,10 +148,9 @@ WinLibs GCC 15.2.0 + MinGW-w64 13.0.0 UCRT toolchain for Windows.
 Windows binaries use `.zip` (deflate level 9) -- extractable with PowerShell
 `Expand-Archive`, `unzip`, or any standard zip tool. No 7-Zip required.
 
-Linux binaries use `.tar.gz` or `.tar.xz` -- extractable with standard `tar`.
-
-The only `.7z` files present are the 7-Zip extras package and Servy, both of
-which are either self-bootstrapping or require 7-Zip as a prerequisite by design.
+Linux binaries use `.tar.gz` -- extractable with standard `tar`. No `.7z` or
+`.tar.xz` archives are staged; every artifact unpacks with tooling already
+present on the target.
 
 ---
 
