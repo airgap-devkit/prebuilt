@@ -1,0 +1,17 @@
+{
+  "tool": "servy",
+  "version": "9.0",
+  "source": "https://github.com/aelassas/servy/releases/tag/v9.0",
+  "platforms": {
+    "windows": {
+      "archive": "servy-9.0-x64-installer.exe",
+      "part_sha256": {
+        "servy-9.0-x64-installer.exe.part-aa": "d74941a55a5b8d01884ad3493d636efe2cb11dbb4e68498a2dfe90a6da6cabfa",
+        "servy-9.0-x64-installer.exe.part-ab": "8be57626edae583cefcf73c4bbaa9b35c5ab776421c86ad2f2fa0ae841a964bc"
+      },
+      "reassemble": "cat servy-9.0-x64-installer.exe.part-* > servy-9.0-x64-installer.exe"
+    }
+  },
+  "compression": "exe",
+  "part_size_mb": 50
+}
