@@ -135,11 +135,11 @@ GCC Toolset 15 RPM packages for RHEL 8.
 | `gcc-toolset-15-rhel8-rpms.tar` | 2 | 50MB |
 
 ### `toolchains/gcc/windows/`
-WinLibs GCC 15.2.0 + MinGW-w64 13.0.0 UCRT toolchain for Windows.
+WinLibs GCC 16.2.0 + MinGW-w64 14.0.0 UCRT toolchain for Windows.
 
 | File | Size | Parts | Split at |
 |------|------|-------|----------|
-| `winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r6.zip` (deflate-9) | 264MB | 6 | 49MB |
+| `winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip` | 261MB | 6 | 50MB |
 
 ---
 
