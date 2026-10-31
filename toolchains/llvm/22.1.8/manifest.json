@@ -1,0 +1,137 @@
+{
+  "tool": "llvm",
+  "version": "22.1.8",
+  "source": "",
+  "platforms": {
+    "linux-x64": {
+      "archive": "LLVM-22.1.8-Linux-X64.tar.gz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-aa": "4f4a6c0a7ba1fcf602c49ef1f90b0e69713419f3599b3b32a9f0c0187608ed58",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ab": "25cea9dea58be44cb37a6760b4452776b29a875e10b8274cb07c191a98b0aacb",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ac": "d859cd864b60bf83a3d18d61955eabf4f6bb48c56bc4ff2f79e8234763be764b",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ad": "ed7e471367a3ac13de242d477dcddcc3775f39d8e4a2d6f78afe78deea0498c4",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ae": "a28d0921141a7c5a5962496640a67fe8a74eb412f8cd876619edeceb61a38128",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-af": "115fe74236d8a270a52868111d34a045bd6825764cb6f812c428f1ea3831434f",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ag": "a87a7468c5086b92a19e8a2a4e871094f01eabf04d313e2420d3caec5c4b736e",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ah": "1e449b1830a713aa642c4e1cf0a55cd1aa98212705a4769d79b140a5a962e056",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ai": "81c12c9690e707ca0465ebe6c2d0544027287634d88ca638c38de456be6490b4",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-aj": "af8fa3a882fda1b54a733225b5cd9a194ff103c237fa563a825f35663a1e4a30",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ak": "c305128b51d3205db633ed26e90a206aefc3bddb7dfcb8822c1125e70276d05d",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-al": "ecb0a4abe9570ce1dfd1b0049c65151a1248b6e06ce24e0b5b9471dbe43d5678",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-am": "c97f0626e866706f359f5b0865e3de90187b36f85f0aaa59617b46d3916b1f4c",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-an": "5bbaa21bd5da595e9fe27385e6e0ba5fb78d925d16a114900a117038857d7b08",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ao": "01dbe5ab7dc7ef866ae77432d6bc4c32ffdf9356e2d8c9120397feac59918d2d",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ap": "f50e98b7e2382bcf7e033f8123a79c72ab3412dc540820e947de7a150c204b26",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-aq": "5b7675f5f5b35e57e9fad005568e568397c0fc97b4a4efd30497193f2181020e",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ar": "293d088e891f514e0381cd93b2c83ebb7f167c4e3db1f64a5f30827ff1c3d246",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-as": "3e645ec8f723755dd029e5cfd658a1b7145cb96bfe94832342dd9de716790f3f",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-at": "925cbadd4bb92b271a8bff69300897a3612b4865ce540d2693d883484b66b7be",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-au": "32b14baa79424f45ef70b0fe47c8c911a244bd664b879ba645a63c15e9b139ce",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-av": "43498171da41c4a120b874de466ff933e047867ee878c590edffd7a74e3b1620",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-aw": "454061d910fd8347f8ab40cfe29acfc1eaf6f096ee636cdfc17061aa5e2bf4ab",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ax": "4577bab960348dc18c62b7a4e3144f3fe185c1472cf551385fc019715ba7b38c",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ay": "212f2699a1952fde7f720be2d01cf16beda7f4cbca0a752cf7d53f8020a914d0",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-az": "a13b4cf5522140988c8758bf58d46bc56b1ffa602927caab4c064e53feb03561",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ba": "3b7878559c62e859b98797021eb3f2b0e0fcacec2f121db6c27aaf7c8bc142aa",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bb": "53bc0f56fc9a643a010ecca46cf313cb988249fb7bfb89ad6f31a847bda05925",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bc": "abce8f2d755d5fbb544b1a0c571199dc8305c320ebc2986572e918a1894e5bc2",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bd": "efa323e77f93cc2c9a7342caf5723d04e80e610ba34dc2e43e3853387d46964a",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-be": "5ea929f02bbb30b718ece8e7f381674180f7e7f209627c2382aba59202ef9907",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bf": "6e3c50001471de6d5625523d6706c3228925ee83dcbed55b4c230d8c8da88751",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bg": "4d7942660ef764d84dfc26025eee25db2743582c8e16351e2dc28f4660569bb6",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bh": "d82bb7a9cd63312e8c81a98a682e4fdbe14de01f01853fff0ead6b1f75b9353f",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bi": "16656e711acc63e1b1421b2324d922bd37b7c177cd8f583abaec5d5b96b2e785",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bj": "b018f84a9c102efb9222ae8a26cc485d4701249deb0d97e85f64f7dde32af02f",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bk": "722421f98743a214ba2bfe709b9d35c27cb329230065bcc47a8e803963fb2005",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bl": "31630e6de5b632c99bdaf9194689a2869e33b456f96398f0a36c44cec36e7bbe",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bm": "9fef1554c0fd6403bc00fce66f652754906a73f240d4f193d17b5f84e31bb2ba",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bn": "6cbeaf76632073c923dc5d2f3d25f1d70255bf719a54b1d097ac0a5779885e91",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bo": "a9b9efa85b348dd67ccf18a4c92612888eb332f2f96c907e3697a14629765bcf",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bp": "f30b10b1eea1ae89e16755705a77142eefffb5862bf1425e376e3c15876d4b1e",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bq": "7a085b3551a74191ce537b1fe498efec02b6ec92e6cbc9bce5a90e2a549edfee",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-br": "64776f222e17e113e5f43ca2475f5402371cb61b7ebc30c42adf2b7f8455b500",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bs": "2b93fb7194d9042b3ab4460cb4763f0d3bee105bc807a9d4a14a37b309f34164",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bt": "492a38f3970873ca26d5d388918926eea2e036b939ef7d2e0159a32228aeea99",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bu": "1615aae57beb762109072ec70bb1661499397bcf3432fdc13f41845a6a3b8e9b",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bv": "275c1f349cd13a8a6d8a4f6115a6943a2039c92e3781d8030233374e2991bb64",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bw": "0287100c840f681bb576bff4a5277803bc94fc8ad2b4dff937126a9421250fe4",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bx": "9ec77c18742f3e44dcce6dfe933d5ef048777a015a886a65f6052b4241444172",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-by": "c4f41dfbc951a27a746b2b7d8157c51a3f361c7aff7b4820adac63a245f35964",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-bz": "38215499ebf7045b00fb5da6caf50a972609facf0f6fccadb02edb8d509c0988",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ca": "7ebc6cccef7cca6b9c23f3b7c18173f8d1250c323602bacdc7e7157e0db6ee34",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-cb": "3a1302177a7a4cdb2fa162dacb446c09c042e2c810ad66374c63d3dc9e5f7cb9",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-cc": "cfd800974a332e005d492c39af5e054912f59a51c2164d3c43a26820a61f5c4f",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-cd": "2d303fbed562a3ec2b3d284aa29aedd9cde5c012f7916bd9de23872593df5994",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-ce": "ac6171a0837e1a96cbb2479d668dbbd05b351f8ac1ada346e8ce7f509d69de95",
+        "LLVM-22.1.8-Linux-X64.tar.gz.part-cf": "85b876c1bc9db6a2f063ff9908775760c0d4c8c4804eb2a9b36bb26b719eae05"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64.tar.gz.part-* | tar -xz"
+    },
+    "windows": {
+      "archive": "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip",
+      "part_sha256": {
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-aa": "3ff2f582038f234f423abe40dce146f8afe7638ef688baabb7f648a77c28b0fc",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ab": "efec849b698ea9a131de33cb26b978d547776c382225f0e7f78d7e5253f8daa6",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ac": "fe3a91d614a3f5f2f15749c274f9d0fa4af2e48c8c9c284ee05bb83ced346f02",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ad": "fd04d8cd583cd2b3aecc9b5040103883fb2d87f976a9dc501cd3eb16d4c99e0b",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ae": "2dd80f2cc3c4332156f7fce78c526bbe5421b8193608529ff622d59558fc10cc",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-af": "8f7b0d82e5557dbec60d1d4495b8e33c3f246c111dcecb2380a7892e61370513",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ag": "eed7e976c7ba3488f2eba1ccb860cba3df040aa96a78da724513b5fc658f68e2",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ah": "271dec89686c22d25c89cd450a3251b571dae935bdb622d37a286584e413cc97",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ai": "23af802fc8a03ff74a2cbec4888858fa5402feaad11c037d55876930485b648c",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-aj": "6ff7c8e5e7082362f99888037751fde08ea6e0f1b6948d125455e387bf9cb8a5",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ak": "aeac98627ed4c8e493402b66da5be68a998a234481d0122ce505d653caa7ef12",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-al": "60938f5a3fce2d7392dfa065073b0bf39af3c51cbc946ccd17f83bf38d49e57e",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-am": "a6b16d45df2bac77c6c9278fb224084c6b308b2f8927db34c341b02b724ad988",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-an": "dd098faf2aa0cb5a7ff67f10a3c19afc99c3ca48dd90f4859e8e0ec72808859d",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ao": "972793d6226357723becf93aeee133e6f158dd5bc94bdbba767f110ceb049afa",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ap": "61b4355b0546b4210a7526d26a4d3dd4833094af971a1b30599b1322e27791a7",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-aq": "6f050181c0533d60584d4a945e2a7cb13b9f7e5fe8fc0e94a8c1e46058286460",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ar": "b72aaba2c73f3f643cc48aaec07c47c885eb5127fb5e7abaebacade62d1af081",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-as": "71aff0c60d4d781fc89d495d387a9ec7a9c5afd17286b2c19b90ccae44421de2",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-at": "6a230abee3abb3ae3fd5198ab1c339084f4c3e9a687f13c79ad94593dbe15d3b",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-au": "17660b261c9984aac742e48b7db2c56a2d75533e29fd5e2aecaa2d68c4140d3b",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-av": "37c7ba1e1357a215c4c1c5c0011e15f4d4a1c13ebd96f15695caf43a45b87371",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-aw": "c030f7593f8dad2ca87821107a24b9847d4a0c706096ac7f47c2374bc8287d09",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ax": "fcb42d225638113f3f7829aecd1aad08944a01fac1c9eedc4956d9b4b3358436",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-ay": "94d7c985600061289fbd2ebef56fcc48b063df36ca25cc3e02c8f0d4cb2a90ec",
+        "clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-az": "db139d1e3f7fc0ee98a9dbc1109a07b576f06a955b898b74d273a8d2971a2179"
+      },
+      "reassemble": "cat clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip.part-* > clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip && unzip -o clang%2Bllvm-22.1.8-x86_64-pc-windows-msvc.zip"
+    },
+    "linux-rhel8": {
+      "archive": "LLVM-22.1.8-Linux-X64-rhel8.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-aa": "c9e68b97348f83f7f2e27d45aac24033110752c9f4bf0bd72880751daa877800",
+        "LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-ab": "85a744671d1fa6deda8125b2539eb9a11d710f661ab45f7a0f1a96bcccb8f42b"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-rhel8.tar.xz.part-* | tar -xJ"
+    },
+    "linux-rhel10": {
+      "archive": "LLVM-22.1.8-Linux-X64-rhel10.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-aa": "79d8c911cc0fbc4806811298513f99a966e6828229ba5b35d5d836723b542613",
+        "LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-ab": "1235665933c387fe354ea3c514359ee739590a9e8ac70a59fe0f1e0a7c71e541"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-rhel10.tar.xz.part-* | tar -xJ"
+    },
+    "linux-musl": {
+      "archive": "LLVM-22.1.8-Linux-X64-musl.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-musl.tar.xz.part-aa": "521b320e23d317e1a686926f43d053c936290005285e26b4380194e823600c1c",
+        "LLVM-22.1.8-Linux-X64-musl.tar.xz.part-ab": "10679fb2865e5afecc5955fd81c7cf0b780cc1d82196c6c10ae1b1c5182024fa"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-musl.tar.xz.part-* | tar -xJ"
+    },
+    "linux-rhel9": {
+      "archive": "LLVM-22.1.8-Linux-X64-rhel9.tar.xz",
+      "part_sha256": {
+        "LLVM-22.1.8-Linux-X64-rhel9.tar.xz.part-aa": "d8c6c3da2680c88514f8acf2756919cfddb29e34bb3838f5129144b3fd4e067a",
+        "LLVM-22.1.8-Linux-X64-rhel9.tar.xz.part-ab": "40c6c3dc9457a73f026ec78c9857f8473b2eb79c9430c2b60618ebc3fd503d01"
+      },
+      "reassemble": "cat LLVM-22.1.8-Linux-X64-rhel9.tar.xz.part-* | tar -xJ"
+    }
+  },
+  "compression": "tar.gz+zip",
+  "part_size_mb": 50
+}

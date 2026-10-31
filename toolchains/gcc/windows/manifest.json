@@ -1,0 +1,21 @@
+{
+  "tool": "winlibs-gcc",
+  "version": "16.2.0",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "archive": "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip",
+      "part_sha256": {
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-aa": "db285990e6f2a240ca3e32dcf6215b2dd1580826533d4f3bd84dfa52950d25a2",
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-ab": "8bb152616d17849f6812e01a21d3e348039343f8feb13fd60daeef256503901b",
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-ac": "007f250b5abf4bbc5ef98d26f199bd4653ed563cffadd57cdc17ca79f270115f",
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-ad": "7147de2c53f2f93f84c080b6beb7fede31ac4ce979cb61497f4231154a3a1436",
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-ae": "6401435719ef3cd8f5a8129e4a903ee28ffdfe11405766afeac39241495bf7e6",
+        "winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-af": "30a670a32f99a23588499c9af36ddddff94364e6f173fdc61774dbb92626103b"
+      },
+      "reassemble": "cat winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip.part-* > winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip && unzip -o winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.zip"
+    }
+  },
+  "compression": "zip",
+  "part_size_mb": 50
+}

@@ -1,0 +1,17 @@
+{
+  "tool": "git",
+  "version": "2.55.0",
+  "source": "https://github.com/git-for-windows/git/releases/tag/v2.55.0.windows.3",
+  "platforms": {
+    "windows": {
+      "archive": "Git-2.55.0.3-64-bit.exe",
+      "part_sha256": {
+        "Git-2.55.0.3-64-bit.exe.part-aa": "dec63cc0a12a467632ed86e1c01cb93393d7ae750ff06127504744e5b9c2b33e",
+        "Git-2.55.0.3-64-bit.exe.part-ab": "804eccb2568eda82dc83498ab8434cd1f8eaa578fd80467d479e94ee66bdd28e"
+      },
+      "reassemble": "cat Git-2.55.0.3-64-bit.exe.part-* > Git-2.55.0.3-64-bit.exe"
+    }
+  },
+  "compression": "exe",
+  "part_size_mb": 50
+}

@@ -1,0 +1,27 @@
+# ── Option B: binary payload lives in GitHub Releases, NOT in git ──────────────
+# The ~14 GB of tool archives/installers/wheels/extensions are published as
+# release assets and rehydrated on a staging host by
+# scripts/internal/fetch-artifacts.sh (DEVKIT_ARTIFACT_BASE) or an offline
+# bundle from scripts/internal/build-bundle.sh. Only manifests (checksums),
+# READMEs, and the small devkit-server binaries under bin/ are tracked here.
+# These rules keep the payload from ever being re-committed into the submodule.
+*.zip
+*.tar.gz
+*.tgz
+*.tar.xz
+*.7z
+*.whl
+*.vsix
+*.rpm
+*.exe
+*.msi
+*.dll
+*.part-*
+*.png
+*.jpg
+*.jpeg
+
+# Exception: the prebuilt devkit-server binaries + signing key that
+# scripts/launch.sh executes directly must stay tracked.
+!bin/
+!bin/**

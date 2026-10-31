@@ -1,0 +1,28 @@
+{
+  "tool": "llvm-mingw",
+  "version": "20260616",
+  "source": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260616",
+  "platforms": {
+    "linux-x64": {
+      "archive": "llvm-mingw-20260616-ucrt-ubuntu-22.04-x86_64.tar.gz",
+      "part_sha256": {
+        "llvm-mingw-20260616-ucrt-ubuntu-22.04-x86_64.tar.gz.part-aa": "1c92ed4430dee3389c57247f1bbed8fdb30cb64d1bb9d4a7fef149d69277e22c",
+        "llvm-mingw-20260616-ucrt-ubuntu-22.04-x86_64.tar.gz.part-ab": "dea43bf8a1307998e7afcec35949804b699f26ef651bd41488bbd941ab0f3bba",
+        "llvm-mingw-20260616-ucrt-ubuntu-22.04-x86_64.tar.gz.part-ac": "ef9fb45fb102ed8dcd49d5ac8af245737b69b8b99c957e597c0edbe3bcc0a320"
+      },
+      "reassemble": "cat llvm-mingw-20260616-ucrt-ubuntu-22.04-x86_64.tar.gz.part-* | tar -xz"
+    },
+    "windows": {
+      "archive": "llvm-mingw-20260616-ucrt-x86_64.zip",
+      "part_sha256": {
+        "llvm-mingw-20260616-ucrt-x86_64.zip.part-aa": "70355d5dca40ac9c10c6ab4011a7b9bbb1998d05094a82b54173a1fa08cb0bec",
+        "llvm-mingw-20260616-ucrt-x86_64.zip.part-ab": "c4e8e9b12f4f4f1fa5bd9d1843cb216228d370f6784f23f17f0032cb2c91feff",
+        "llvm-mingw-20260616-ucrt-x86_64.zip.part-ac": "45be655500a8be12a9bbc69f0d713d6191262b1a76e3bc7223bef113afc890c8",
+        "llvm-mingw-20260616-ucrt-x86_64.zip.part-ad": "1b1d582304d751032a9c06f8b5be8f1b6ef325bb5d3d128d3c5e5c5d2e8017d5"
+      },
+      "reassemble": "cat llvm-mingw-20260616-ucrt-x86_64.zip.part-* > llvm-mingw-20260616-ucrt-x86_64.zip && unzip -o llvm-mingw-20260616-ucrt-x86_64.zip"
+    }
+  },
+  "compression": "tar.gz+zip",
+  "part_size_mb": 50
+}

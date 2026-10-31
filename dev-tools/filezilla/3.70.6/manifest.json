@@ -1,0 +1,17 @@
+{
+  "tool": "filezilla",
+  "version": "3.70.6",
+  "source": "",
+  "platforms": {
+    "windows": {
+      "installer": "FileZilla_3.70.6_win64-setup.exe",
+      "sha256": "e345086eb4cc092fdc56e1f024491de2fe5b4225a76178e78cfc3f82f7c979df"
+    },
+    "linux-x64": {
+      "archive": "FileZilla_3.70.6_x86_64-linux-gnu.tar.xz",
+      "sha256": "2ca1fb5849dbe22ce2a63d33c7e2bdc31198a6bf475c3fdd530245db760fe17d",
+      "reassemble": "tar -xJf FileZilla_3.70.6_x86_64-linux-gnu.tar.xz"
+    }
+  },
+  "compression": "exe+tar.xz"
+}

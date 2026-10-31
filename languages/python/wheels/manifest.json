@@ -1,0 +1,37 @@
+{
+  "tool": "python-wheels",
+  "version": "vendored",
+  "note": "Offline pip wheels installed via `pip install --no-index`. Platform-specific wheels (win_amd64/cp314) are filtered at install time by setup.sh.",
+  "files": {
+    "certifi-2026.4.22-py3-none-any.whl": {
+      "sha256": "3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a"
+    },
+    "click-8.3.3-py3-none-any.whl": {
+      "sha256": "a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613"
+    },
+    "gcovr-8.6-py3-none-any.whl": {
+      "sha256": "dbf9d87c38042752ad6f530aa8210427e22b526611bb7b7bfed0e81977d1f1ef"
+    },
+    "idna-3.13-py3-none-any.whl": {
+      "sha256": "892ea0cde124a99ce773decba204c5552b69c3c67ffd5f232eb7696135bc8bb3"
+    },
+    "matplotlib-3.10.9-cp314-cp314-win_amd64.whl": {
+      "sha256": "336b9acc64d309063126edcdaca00db9373af3c476bb94388fe9c5a53ad13e6f"
+    },
+    "pydantic-2.13.3-py3-none-any.whl": {
+      "sha256": "6db14ac8dfc9a1e57f87ea2c0de670c251240f43cb0c30a5130e9720dc612927"
+    },
+    "pywin32-311-cp314-cp314-win_amd64.whl": {
+      "sha256": "3aca44c046bd2ed8c90de9cb8427f581c479e594e99b5c0bb19b29c10fd6cb87"
+    },
+    "rich-15.0.0-py3-none-any.whl": {
+      "sha256": "33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb"
+    },
+    "streamlit-1.57.0-py3-none-any.whl": {
+      "sha256": "0d1d41972aeade5637dbb0e7f0eefa5312272f85304923d240a1b1f0475249c8"
+    },
+    "urllib3-2.6.3-py3-none-any.whl": {
+      "sha256": "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4"
+    }
+  }
+}

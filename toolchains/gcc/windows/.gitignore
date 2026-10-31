@@ -1,0 +1,2 @@
+*.7z
+*.7z > winlibs-gcc-ucrt/.gitignore.7z.part-*

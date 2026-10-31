@@ -1,0 +1,32 @@
+{
+  "tool": "dotnet",
+  "version": "10.0.302",
+  "source": "",
+  "platforms": {
+    "linux-x64": {
+      "archive": "dotnet-sdk-10.0.302-linux-x64.tar.gz",
+      "part_sha256": {
+        "dotnet-sdk-10.0.302-linux-x64.tar.gz.part-aa": "81880a39c590567c82f0331b9dad1e60bd4dd7036326c4932f095204e1a84f5d",
+        "dotnet-sdk-10.0.302-linux-x64.tar.gz.part-ab": "6b25d5db3ba685a71fc055ab3c9d0b6bcffd50159848f728872a3dbc5d16518a",
+        "dotnet-sdk-10.0.302-linux-x64.tar.gz.part-ac": "18f5156671a335cec401217fb2975a56311b44bae0551a923e3c9917a12de3af",
+        "dotnet-sdk-10.0.302-linux-x64.tar.gz.part-ad": "dfe1bec4a132fa3c6ca666babbf7efbf4ec19471c1ca5aaacb0285c6cfd5d461",
+        "dotnet-sdk-10.0.302-linux-x64.tar.gz.part-ae": "21c9b5f98cba8a99369ac79664d71105b87699ba866e5b113d7c7b18704592e9"
+      },
+      "reassemble": "cat dotnet-sdk-10.0.302-linux-x64.tar.gz.part-* | tar -xz"
+    },
+    "windows": {
+      "archive": "dotnet-sdk-10.0.302-win-x64.zip",
+      "part_sha256": {
+        "dotnet-sdk-10.0.302-win-x64.zip.part-aa": "9d82c30b7c6cc8fa186d91ef99944dae36c63a2db2403bdc61b63cecf0e3a330",
+        "dotnet-sdk-10.0.302-win-x64.zip.part-ab": "61dee004a76afb7e1e6f90d638b70d45049bb8092e2fb1a48683dcecd34375ba",
+        "dotnet-sdk-10.0.302-win-x64.zip.part-ac": "17459cefa49890bb6665822f92e155288f2f12b304373731d4936932b3b57a00",
+        "dotnet-sdk-10.0.302-win-x64.zip.part-ad": "24ed29aba8f861e7eeb13514d00570c7ab0c3296899cc2d9a792b81be8497220",
+        "dotnet-sdk-10.0.302-win-x64.zip.part-ae": "600b729548a9e18018c0c6a278533eba742258e4aec6f237d08d2f41c42ee449",
+        "dotnet-sdk-10.0.302-win-x64.zip.part-af": "5040ce804db508554395cd59ef3e6e4c3cb40a1b2e6cb7ff5d6f45a323eae481"
+      },
+      "reassemble": "cat dotnet-sdk-10.0.302-win-x64.zip.part-* > dotnet-sdk-10.0.302-win-x64.zip && unzip -o dotnet-sdk-10.0.302-win-x64.zip"
+    }
+  },
+  "compression": "tar.gz+zip",
+  "part_size_mb": 50
+}

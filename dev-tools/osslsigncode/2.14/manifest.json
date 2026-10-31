@@ -1,0 +1,13 @@
+{
+  "tool": "osslsigncode",
+  "version": "2.14",
+  "source": "https://github.com/mtrojnar/osslsigncode/releases/tag/2.14",
+  "platforms": {
+    "windows": {
+      "archive": "osslsigncode-2.14-windows-x64-mingw.zip",
+      "sha256": "ac3921ca062ad4aebad3bbb1dbe5dac0b431304e06bfe698dc4a3e5a0e9ddce0",
+      "reassemble": "unzip -o osslsigncode-2.14-windows-x64-mingw.zip"
+    }
+  },
+  "compression": "zip"
+}

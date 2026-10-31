@@ -1,0 +1,17 @@
+{
+  "tool": "gcc-toolset",
+  "version": "15",
+  "source": "",
+  "platforms": {
+    "linux-x64": {
+      "archive": "gcc-toolset-15-rhel8-rpms.zip",
+      "part_sha256": {
+        "gcc-toolset-15-rhel8-rpms.zip.part-aa": "c326d392f9ee53ecdb9608d6f48d1f72e83d3189fad034bc2eb6ae8ca3da2833",
+        "gcc-toolset-15-rhel8-rpms.zip.part-ab": "68310fb285172b0c8432b2f6b5bbb6c266d9533f7bbf294f6d9146dde576a06d"
+      },
+      "reassemble": "cat gcc-toolset-15-rhel8-rpms.zip.part-* > gcc-toolset-15-rhel8-rpms.zip && unzip -o gcc-toolset-15-rhel8-rpms.zip"
+    }
+  },
+  "compression": "zip",
+  "part_size_mb": 50
+}

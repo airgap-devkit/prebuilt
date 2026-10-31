@@ -1,0 +1,12 @@
+{
+  "tool": "notepadpp",
+  "version": "8.9.8",
+  "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.8",
+  "platforms": {
+    "windows": {
+      "installer": "npp.8.9.8.Installer.x64.exe",
+      "sha256": "7b2a949bf460fb37a3888c9048698f43222a185a48323023df1c51e78a3ca1c2"
+    }
+  },
+  "compression": "exe"
+}

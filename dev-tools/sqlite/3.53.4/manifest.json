@@ -1,0 +1,38 @@
+{
+  "tool": "sqlite",
+  "version": "3.53.4",
+  "source": "sqlite.org (windows CLI tools + amalgamation for static builds); RHEL/Rocky distro system RPMs per major (linux)",
+  "platforms": {
+    "windows": {
+      "archive": "sqlite-tools-win-x64-3530400.zip",
+      "sha256": "f46ee2475de4cbe287e6e5f7d43c838796b14e7379cd216bdbb28d391429f9fc",
+      "reassemble": "unzip -o sqlite-tools-win-x64-3530400.zip"
+    },
+    "linux-glibc-static": {
+      "archive": "sqlite3-3.53.4-linux-x64-glibc",
+      "sha256": "286b7260d731c940a7df135d3022578a96123068c81103449cf7f8d053d77147",
+      "reassemble": "install -m755 sqlite3-3.53.4-linux-x64-glibc <prefix>/bin/sqlite3"
+    },
+    "linux-musl-static": {
+      "archive": "sqlite3-3.53.4-linux-x64-musl",
+      "sha256": "f1738c3e2a32994c508215838b47428809b161b959fddd616695efc3639264a6",
+      "reassemble": "install -m755 sqlite3-3.53.4-linux-x64-musl <prefix>/bin/sqlite3"
+    },
+    "linux-rhel8": {
+      "archive": "sqlite-3.26.0-20.el8_10.x86_64.rpm",
+      "sha256": "0ad7d10fe613415fb056a16f0699e39cb4182271300a0c353137b744671b3c78",
+      "reassemble": "rpm2cpio sqlite-3.26.0-20.el8_10.x86_64.rpm | cpio -idm"
+    },
+    "linux-rhel9": {
+      "archive": "sqlite-3.34.1-10.el9_8.x86_64.rpm",
+      "sha256": "c9ae4d55d72fa7b291fd258f6b21c7014e36a7b8d53ca418720685527cf0737a",
+      "reassemble": "rpm2cpio sqlite-3.34.1-10.el9_8.x86_64.rpm | cpio -idm"
+    },
+    "linux-rhel10": {
+      "archive": "sqlite-3.46.1-5.el10_1.x86_64.rpm",
+      "sha256": "61f9c05a8a4cf88f12c0e62bb3b60937bc18329f3f4fd8aa75a38b3caf1348a4",
+      "reassemble": "rpm2cpio sqlite-3.46.1-5.el10_1.x86_64.rpm | cpio -idm"
+    }
+  },
+  "compression": "zip+rpm"
+}

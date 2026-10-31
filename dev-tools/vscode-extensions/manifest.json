@@ -1,0 +1,33 @@
+{
+  "tool": "vscode-extensions",
+  "version": "various",
+  "extensions": {
+    "matepek.vscode-catch2-test-adapter-4.23.15.vsix": {
+      "sha256": "5e23f3b207f7333cc76333ada01ce0b4bcde6d8713f964dd11dff677c44280ec"
+    },
+    "ms-python.python-2026.4.0@linux-x64.vsix": {
+      "sha256": "452edff30652b1b1152d8fb8e2c664b0993353b955ae108ddb07eefbc2284b13"
+    },
+    "ms-python.vscode-pylance-2026.2.1.vsix": {
+      "sha256": "65566119a178cdd5f2c3c214a8a77f1112d1fcf6b4b632518c05ad1654760a6a"
+    },
+    "ms-vscode-remote.remote-ssh-0.123.2026033115.vsix": {
+      "sha256": "7d4e00811a1608769b072c67dd06221f168a224459ffbd0d2d7f147ca6f6d66a"
+    },
+    "ms-vscode.cmake-tools-1.23.52.vsix": {
+      "sha256": "d71b6c4df5a54d80277234d117c05a97f9403851a90729b932854869297fbe26"
+    },
+    "twxs.cmake-0.0.17.vsix": {
+      "sha256": "ca1ffa71c24da099522693ff5b4ba109df971328531a306c20b03fa6d770572e"
+    },
+    "xaver.clang-format-1.9.0.vsix": {
+      "sha256": "40cf184e3835a5b105b71bb62002a24b81472bd56600b9d611dddcaf4a144060"
+    },
+    "ms-vscode.cpptools-1.31.5@linux-x64.vsix": {
+      "part_sha256": {
+        "ms-vscode.cpptools-1.31.5@linux-x64.vsix.part-aa": "397f340bb852ff6c5207bc19b4c5eb26cd1a8b08aa775c6ff4c2b30f810f3fb4",
+        "ms-vscode.cpptools-1.31.5@linux-x64.vsix.part-ab": "8c003d49e3f645e2308538439c8c878fbeef58085f28ad09133c2278225fc038"
+      }
+    }
+  }
+}
